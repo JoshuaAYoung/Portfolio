@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+  }
+
+.navigationContainer {
+    height: 40px;
+    background-color: #100000;
+}
+
+.hamburgerMenu {
+    display: none;
+}
+
+.joshImage {
+    margin: 20px 10px 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.titleText {
+    display: block;
+    padding-top: 200px;
+    padding-left: 20px;
+    margin-bottom: 50px;
+}
+
+.projectContainer {
+    background-color: #100000;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project {
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    background-color: gray;
+}
+
+.footerContainer {
+    height: 100px;
+
+}
+.hamburger {
+    margin: 10px auto 0 10px;
+}
