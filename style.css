@@ -1,7 +1,13 @@
 body {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
   }
+
+a {
+  text-decoration: none;
+  color: black;
+}
 
 p {
   margin: 0;
@@ -15,13 +21,17 @@ p {
   cursor: pointer;
 }
 
+.expandedBio {
+  display: none;
+}
+
 .headerContainer {
   height: 65px;
   background-image: url("./images/backgrounds/background.svg");
   background-color: #EDEDED;
   background-size: 250px auto;
   width: 100%;
-  position: fixed;
+  position: absolute;
   border-bottom: 2px solid #818282;
   z-index: 40;
 }
@@ -65,6 +75,22 @@ p {
   margin-bottom: 20px;
 }
 
+.menuDesktop {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: -1px;
+  color: rgb(0, 0, 0);
+  vertical-align: -1px;
+}
+
+.navMenuDesktop {
+  position: absolute;
+  right: 30px;
+  top: 18px;
+}
+
 .menuItem {
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
@@ -88,30 +114,28 @@ p {
 .hamburger {
   background: none;
   line-height: 45px;
-  padding: 10px 30px 10px 20px;
+  padding: 10px 0 10px 20px;
   border: 0;
   font-size: 1.5em;
   font-weight: bolder;
   cursor: pointer;
   transform: scale(1.5, 1);
   position: absolute;
-  right: 0;
+  right: 30px;
   top: 0;
-  /* z-index: 15; */
 }
 
 .cross {
   background: none;
   line-height: 45px;
-  padding: 10px 33px 10px 20px;
+  padding: 10px 0 10px 20px;
   border: 0;
   font-size: 1.5em;
   cursor: pointer;
   transform: scale(1.5, 1);
   position: absolute;
-  right: 0;
+  right: 33px;
   top: 0;
-  /* z-index: 15; */
 }
 
 .joshImage {
@@ -125,7 +149,7 @@ p {
   top: 160px;
   display: inline-block;
   position: absolute;
-  right: 30px;
+  left: 60%;
   z-index: 1;
 }
 
@@ -169,8 +193,6 @@ p {
   background-image: url("./images/backgrounds/background.svg");
   background-size: 250px auto;
   background-color: #EDEDED;
-  display: flex;
-  flex-direction: column;
   width: 100%;
   padding-bottom: 60px;
 }
@@ -215,6 +237,10 @@ p {
   margin: 8px auto 0;
 }
 
+.fake {
+  display: none;
+}
+
 .project {
   margin: 40px auto 0;
   text-align: center;
@@ -224,6 +250,30 @@ p {
 .projectImage {
   width: 300px;
   border: 2px solid #818282;
+  z-index: 2;
+}
+
+.projectImageContainer:hover > img {
+  filter: brightness(20%);
+}
+
+.projectImageContainer {
+  position: relative;
+}
+
+.projectImageContainer:hover::after {
+  content: "More Info";
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: white;
+  z-index: 1;
+  font-weight: 700;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  cursor: pointer;
+  margin-left: -46px;
+  margin-top: -10px;
 }
 
 .projectTitle {
@@ -237,7 +287,7 @@ p {
   font-family: 'Montserrat', sans-serif;
   font-size: 22px;
   font-weight: 700;
-  color: black;
+  margin: auto 5px;
 }
 
 .logoBreak {
@@ -245,16 +295,25 @@ p {
   margin: 20px 4px 0;
 }
 
+.menuBreak {
+  width: 10px;
+  margin: 18px 4px 0;
+}
+
 .projectLanguages { 
   font-size: 13px;
-  font-weight: thin;
+  font-weight: 300;
   margin: 0 0 14px;
 }
 
 .projectDescription {
 font-size: 13px;
-font-weight: thin;
-margin: 0 0 14px;
+font-weight: 300;
+margin: 0 5% 14px;
+}
+
+.fake800, .fake980, .fake1200 {
+  display: none;
 }
 
 hr {
@@ -293,6 +352,64 @@ hr {
   margin-bottom: 70px;
 }
 
+.demoOption {
+  font-weight: 700;
+}
+
+.formList, .inputList {
+  list-style-type: none;
+}
+
+.inputList {
+  margin-bottom: 7px;
+}
+
+#submitButton {
+  display: block;
+  margin: 20px auto 0;
+  background-color: #70C9BE;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.portfolioLink {
+  color: blue;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.formLegend {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+fieldset {
+  background-image: url("./images/backgrounds/background.svg");
+  background-color: #EDEDED;
+  background-size: 250px auto;
+  border: 2px solid #818282;
+}
+
+.projectGeneratorList {
+  width: 235px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+
+.inputText {
+  width: 230px;
+}
+
 
 .footerContainer {
   border-top: 2px solid #818282;
@@ -319,9 +436,6 @@ hr {
   margin-top: 35px;
 }
 
-#myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
-}
 
 #scrollTop {
   display: none;
@@ -337,4 +451,242 @@ hr {
   cursor: pointer;
   padding: 15px;
   opacity: .6;
+}
+
+
+@media only screen and (min-width: 420px) {
+  .joshImage {
+    width: 55%;
+  }
+
+  .titleText {
+    font-size: 60px;
+    margin-top: 50%;
+  }
+  .titleTextContainer {
+  right: 10%;
+  left: auto;
+  }
+
+  .titleTextContainer:before {
+    left: .7rem;
+    bottom: 3.6rem;
+    height: 2.2rem;
+  }
+
+  .portfolioTitle {
+    font-size: 50px;
+  }
+
+  .portfolioTitle:before {
+    right: 28px;
+    top: 23px;
+    width: 205px;
+    height: 30px;
+  }
+
+  .project {
+    width: 100%;
+  }
+
+  .projectImage {
+    width: 80%;
+  }
+
+  .projectTitle {
+    font-size: 18px;
+  }
+
+  .projectDescription, .projectLanguages {
+  margin: 0 15% 16px;
+  font-size: 16px;
+  }
+
+  .portfolioProj {
+  margin: 0 10% 0;
+  }
+
+  .portfolioProjText {
+  font-size: 45px;
+  }
+
+
+  .portfolioProjText:before {
+  right: 0;
+  top: .4em;
+  width: 2.8em;
+  height: .7em;
+  }
+}
+
+@media only screen and (min-width: 620px) {
+  .titleText {
+    font-size: 100px;
+    letter-spacing: -3px;
+  }
+  .titleTextContainer:before {
+    left: 1.2rem;
+    bottom: 5.8rem;
+    height: 3.8rem;
+  }
+
+.projectGeneratorList {
+  width: 300px;
+}
+
+  .inputText {
+    width: 300px;
+  }
+  
+}
+
+@media only screen and (min-width: 800px) {
+  .name {
+    font-size: 33px;
+  }
+
+  .gearIcon {
+    width: 25px;
+    margin-left: 30px;
+  }
+  
+  .projectsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+
+  .project {
+    width: 45%;
+  }
+  .projectImage {
+  width: 100%;
+  }
+
+  .projectDescription {
+    margin: 0 0 14px;
+  
+  }
+
+  .titleTextContainer{
+  top: 200px;
+  left: 58%;
+  right: auto;
+  }
+
+  .joshImage {
+    width: 400px;
+    margin: 110px 0 0 50px;
+  }
+
+.bioText {
+  margin-top: auto;
+  z-index: 2;
+  margin-bottom: 0;
+}
+
+.hero {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.portfolioDemo {
+  width: 625px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fake980, .fake1200 {
+  display: none;
+}
+
+.fake800 {
+  display: initial;
+}
+
+
+@media only screen and (min-width: 980px) {
+  .project {
+    width: 30%;
+  }
+
+  .titleText {
+    font-size: 140px;
+    letter-spacing: -7px;
+  }
+
+  .titleTextContainer{
+    top: 10px;
+    left: 500px;
+    right: auto;
+  }
+
+  .titleTextContainer:before {
+    left: 1.7rem;
+    bottom: 8.4rem;
+    height: 5rem;
+  }
+
+  .navMenuMobile {
+    display: none;
+  }
+
+  .bioText {
+  margin-left: 60px;
+  }
+
+  .hamburger, .cross {
+    display: none;
+  }
+
+  .navDesktop {
+    display: initial;
+  }
+
+  .expandBio {
+    display: none;
+  }
+
+  .collapseBio {
+    display: none;
+  }
+
+  .expandedBio {
+    display: initial;
+  }
+
+  .portfolioProjDescription {
+    width: 780px;
+  }
+
+  .fake800, .fake1200 {
+    display: none;
+  }
+
+  .fake980 {
+    display: initial;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .project {
+    width: 23%;
+  }
+
+  .fake {
+    display: initial;
+  }
+
+  .bioText {
+    width: 620px;
+  }
+
+  .fake800, .fake980 {
+    display: none;
+  }
+
+  .fake1200 {
+    display: initial;
+  }
+
 }
