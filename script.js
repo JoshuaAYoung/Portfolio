@@ -209,7 +209,7 @@ function handleStart() {
 }
 
 function pushProjects() {
-    $(".projectsContainer").append(generateProjectHtml());
+    $(".projectsContainer").prepend(generateProjectHtml());
 }
 
 function handleDescription() {
