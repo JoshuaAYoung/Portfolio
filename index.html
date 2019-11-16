@@ -13,13 +13,13 @@
 </head>
 <body>
     <header class="headerContainer">
-        <nav role="navigation" class="navMobile">
-            <a href="index.html" alt="home"><img src="./images/gearlogo.svg" alt="gear logo bullet" class="gearIcon"> <h1 class="name">Josh Young</h1></a>
+        <nav class="navMobile">
+            <a href="index.html"><img src="./images/gearlogo.svg" alt="gear logo bullet" class="gearIcon"> <h1 class="name">Josh Young</h1></a>
             <button class="hamburger">&#9776;</button>
             <button class="cross">X</button>
         </nav>
         <nav class="navMenuMobile">
-                <ul class="navItemsMobile">
+            <ul class="navItemsMobile">
                 <li>
                     <a href="index.html" class="menuItem home">Home.</a>
                 </li>
@@ -35,8 +35,9 @@
                 <li>
                     <a href="./images/resume.pdf" target="_blank" class="menuItem">Resume.</a>
                 </li>
+            </ul>
         </nav>
-        <nav role="navigation" class="navDesktop">
+        <nav class="navDesktop">
                 <div class="navMenuDesktop">
                     <a href="index.html" class="menuDesktop">Home</a>
                     <span class="projectBullet"><img src="./images/gearlogo.svg" alt="gear logo" class="menuBreak"></span>
@@ -51,7 +52,7 @@
             </nav>
     </header>
         
-    <main role="main">
+    <main>
         <section class="hero">
             <img src="./images/joshyoung.jpg" alt="Josh Young's profile picture" class="joshImage">
             <div class="titleTextContainer">
@@ -77,7 +78,7 @@
             <div class=demoContainer>
                 <h2 class="portfolioProjText">Demo ${this}.</h2>
             </div>
-            <p class="portfolioProjDescription">Want to try out the multidimensional array that stores projects on this website? Fill out the form below or just click submit to generate a random project and add it to the page. You can also click <a href="https://github.com/JoshuaAYoung/portfolio" alt="this portfolio website's github page" class="portfolioLink" target="blank">here</a> to see the source code for this website.</p>
+            <p class="portfolioProjDescription">Want to try out the multidimensional array that stores projects on this website? Fill out the form below or just click submit to generate a random project and add it to the page. You can also click <a href="https://github.com/JoshuaAYoung/portfolio" class="portfolioLink" target="blank">here</a> to see the source code for this website.</p>
             <form class="portfolioDemo">
                     <fieldset>
                             <legend class="formLegend">Project Generator</legend>
@@ -106,22 +107,23 @@
                                 <li class="inputList">
                                     <input type="text" name="description" id="fourthOption" class="inputText">   
                                 </li>
+                            </ul>
                         <button type="submit" id="submitButton" role="submit">SUBMIT</button>
                     </fieldset>
                 </form>
             </p>
         </section>
     </main>
-    <footer role="content-info" class="footerContainer">
+    <footer role="contentinfo" class="footerContainer">
         <section class="socialLogoContainer">
                 <a href="mailto:joshua@young.net">
-                    <img src="./images/emaillogo.svg" class="socialLogo">
+                    <img src="./images/emaillogo.svg" class="socialLogo" alt="email logo icon">
                 </a>
                 <a href="https://github.com/JoshuaAYoung" target="_blank">
-                    <img src="./images/githublogo.svg" class="socialLogo">
+                    <img src="./images/githublogo.svg" class="socialLogo" alt="github logo icon">
                 </a>
                 <a href="https://www.linkedin.com/in/joshua-young-250a7512" target="_blank">
-                    <img src="./images/linkedinlogo.svg" class="socialLogo">
+                    <img src="./images/linkedinlogo.svg" class="socialLogo" alt="linkedin logo icon">
                 </a>
         </section>
         <p class="copyright"></p>
