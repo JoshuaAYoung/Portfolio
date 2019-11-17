@@ -7,7 +7,8 @@ const PROJECTS = [
             languages: "HTML | CSS | JavaScript | jQuery",
             description: "is a quiz app built in HTML, CSS, JavaScript, and jQuery. The single page of HTML is refreshed using jQuery event handlers to replace content on the page. A multidimensional array handles the data and keeps track of the users progress.",
             code: "https://github.com/JoshuaAYoung/QuizApp",
-            demo: "https://joshuaayoung.github.io/QuizApp/"
+            demo: "https://joshuaayoung.github.io/QuizApp/",
+            class: "projectImage"
         },
         //2
         {
@@ -17,7 +18,8 @@ const PROJECTS = [
             languages: "HTML | CSS | JavaScript | jQuery",
             description: "is a quiz app built in HTML, CSS, JavaScript, and jQuery. The single page of HTML is refreshed using jQuery event handlers to replace content on the page. A multidimensional array handles the data and keeps track of the users progress.",
             code: "https://github.com/JoshuaAYoung/QuizApp",
-            demo: "https://joshuaayoung.github.io/QuizApp/"
+            demo: "https://joshuaayoung.github.io/QuizApp/",
+            class: "projectImage"
         },
         //3
         {
@@ -27,7 +29,8 @@ const PROJECTS = [
             languages: "HTML | CSS | JavaScript | jQuery",
             description: "is a quiz app built in HTML, CSS, JavaScript, and jQuery. The single page of HTML is refreshed using jQuery event handlers to replace content on the page. A multidimensional array handles the data and keeps track of the users progress.",
             code: "https://github.com/JoshuaAYoung/QuizApp",
-            demo: "https://joshuaayoung.github.io/QuizApp/"
+            demo: "https://joshuaayoung.github.io/QuizApp/",
+            class: "projectImage"
         },
         //4
         {
@@ -37,7 +40,8 @@ const PROJECTS = [
             languages: "HTML | CSS | JavaScript | jQuery",
             description: "is a quiz app built in HTML, CSS, JavaScript, and jQuery. The single page of HTML is refreshed using jQuery event handlers to replace content on the page. A multidimensional array handles the data and keeps track of the users progress.",
             code: "https://github.com/JoshuaAYoung/QuizApp",
-            demo: "https://joshuaayoung.github.io/QuizApp/"
+            demo: "https://joshuaayoung.github.io/QuizApp/",
+            class: "projectImage"
         },
         //5
         {
@@ -47,7 +51,8 @@ const PROJECTS = [
             languages: "HTML | CSS | JavaScript | jQuery",
             description: "is a quiz app built in HTML, CSS, JavaScript, and jQuery. The single page of HTML is refreshed using jQuery event handlers to replace content on the page. A multidimensional array handles the data and keeps track of the users progress.",
             code: "https://github.com/JoshuaAYoung/QuizApp",
-            demo: "https://joshuaayoung.github.io/QuizApp/"
+            demo: "https://joshuaayoung.github.io/QuizApp/",
+            class: "projectImage"
         },
         //6
         {
@@ -57,20 +62,28 @@ const PROJECTS = [
             languages: "HTML | CSS | JavaScript | jQuery",
             description: "is a quiz app built in HTML, CSS, JavaScript, and jQuery. The single page of HTML is refreshed using jQuery event handlers to replace content on the page. A multidimensional array handles the data and keeps track of the users progress.",
             code: "https://github.com/JoshuaAYoung/QuizApp",
-            demo: "https://joshuaayoung.github.io/QuizApp/"
+            demo: "https://joshuaayoung.github.io/QuizApp/",
+            class: "projectImage"
         }
     ]
+
+    const demoData = {
+        title: "",
+        image: "",
+        languages: "",
+        description: ""
+    }
 
 //RANDOM
 
 function moveHelloUp() {
-    if ($(window).width() >= 800) {
+    if ($(window).width() >= 780 && $(window).width() < 960) {
         $(".titleTextContainer").css("top", "-10px");
     }
 }
 
 function moveHelloDown() {
-    if ($(window).width() >= 800) {
+    if ($(window).width() >= 780 && $(window).width() < 960) {
         $(".titleTextContainer").css("top", "");
     }
 }
@@ -102,7 +115,7 @@ function generateCopyright() {
 
 function generateProject(index) {
     return `<div class="project" id="project">
-    <div class="projectImageContainer"><img src="${PROJECTS[index].image}" alt="${PROJECTS[index].imageAlt}" aria-controls="project" class="projectImage image${PROJECTS[index]+1}"></div>
+    <div class="projectImageContainer"><img src="${PROJECTS[index].image}" alt="${PROJECTS[index].imageAlt}" aria-controls="project" class="${PROJECTS[index].class}"></div>
     <h3 class="projectTitle">${PROJECTS[index].title}</h3>
     <div class="projectDescription">
         <p>${PROJECTS[index].description}</p>
@@ -146,27 +159,31 @@ function generateEmpty() {
     };
 }
 
-
 //CODE DEMO
 
-// function displayResults (responseJson) {
-//     let catImage = responseJson[0].url;
-// }
+function displayResults(responseJson) {
+    let catImage = responseJson[0].url;
+    let formTitle = demoData.title || "A Cool Project";
+    let formLink = demoData.image || catImage;
+    let formLanguages = demoData.languages || "Akkadian | Sanskrit | Old Norse";
+    let formDescription = demoData.description || "This was by far the hardest project I ever worked on. It changed who I am. I walked into the flames and what came out of the other side was unrecognizable. Like a phoenix. Rising from the ashes of this project's code permanently altered.";
+    generateDemoProject(formTitle, formLink, formLanguages, formDescription);
+}
 
-// function getImage() {
-//     let url="https://api.thecatapi.com/v1/images/search";
-//     fetch(url)
-//     .then(response => {
-//       if (response.ok) {
-//         return response.json();
-//       }
-//       throw new Error(response.statusText);
-//     })
-//     .then(responseJson => getInput(responseJson))
-//     .catch(err => {
-//       console.log(`Something went wrong: ${err.message}`);
-//     });
-// }
+function getImage() {
+    let url="https://api.thecatapi.com/v1/images/search";
+    fetch(url)
+    .then(response => {
+      if (response.ok) {
+        return response.json();
+      }
+      throw new Error(response.statusText);
+    })
+    .then(responseJson => displayResults(responseJson))
+    .catch(err => {
+      alert(`Something went wrong: ${err.message}`);
+    });
+}
 
 function generateDemoProject(title, link, languages, description) {   
     PROJECTS.push(
@@ -176,35 +193,32 @@ function generateDemoProject(title, link, languages, description) {
         languages: languages,
         description: description,
         code: "https://github.com/JoshuaAYoung",
-        demo: "index.html"
+        demo: "index.html",
+        class: "projectImage demoProjectImage"
         }
-    );
+    )
+    $(".projectsContainer").empty();
+    pushProjects();
+    generateEmpty();
+    handleDescription();
 }
 
 
 //HANDLERS
 
-// function getInput(responseJson) {
 function getInput() {
-    // getImage();
-    let catImage = "https://loremflickr.com/400/325/";
-    // let catImage = responseJson[0].url;
     $('.portfolioDemo').on('submit', function(event){
         event.preventDefault();
-        let formTitle = $(this).find('input[name="projecttitle"]').val() || "A Cool Project";
-        let formLink = $(this).find('input[name="imagelink"]').val() || catImage;
-        let formLanguages = $(this).find('input[name="languagesused"]').val() || "Akkadian | Sanskrit | Old Norse"
-        let formDescription = $(this).find('input[name="description"]').val() || "This was by far the hardest project I ever worked on. It changed who I am. I walked into the flames and what came out of the other side was unrecognizable. Like a phoenix. Rising from the ashes of this project's code permanently altered.";
-        generateDemoProject(formTitle, formLink, formLanguages, formDescription);
-        $(".projectsContainer").empty();
-        pushProjects();
-        generateEmpty();
-})
+        demoData.title = $(this).find('input[name="projecttitle"]').val();
+        demoData.image = $(this).find('input[name="imagelink"]').val();
+        demoData.languages = $(this).find('input[name="languagesused"]').val()
+        demoData.description = $(this).find('input[name="description"]').val();
+        getImage();
+    })
 }
 
 function handleStart() {
     $(".copyright").html(generateCopyright())
-    handleDescription();
     generateEmpty();
 }
 
@@ -278,5 +292,6 @@ $(function(){
     handleHamburger();
     handleBio();
     buttonScroll();
+    handleDescription();
     getInput();
 })

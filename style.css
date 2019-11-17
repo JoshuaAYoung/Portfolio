@@ -251,6 +251,11 @@ p {
   width: 300px;
   border: 2px solid #818282;
   z-index: 2;
+  object-fit: cover;
+}
+
+.demoProjectImage {
+  height: 243.66px;
 }
 
 .projectImageContainer:hover > img {
@@ -517,6 +522,11 @@ fieldset {
   width: 2.8em;
   height: .7em;
   }
+
+  .demoProjectImage {
+    height: 63.4vw;
+  }
+
 }
 
 @media only screen and (min-width: 620px) {
@@ -604,6 +614,11 @@ fieldset {
   display: initial;
 }
 
+.demoProjectImage {
+  height: 34.3vw;
+  object-fit: cover;
+  width: 100%;
+}
 
 @media only screen and (min-width: 980px) {
   .project {
@@ -666,6 +681,10 @@ fieldset {
   .fake980 {
     display: initial;
   }
+
+  .demoProjectImage {
+    height: 23.2vw;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -689,4 +708,7 @@ fieldset {
     display: initial;
   }
 
+  .demoProjectImage {
+    height: 18vw;
+  }
 }
