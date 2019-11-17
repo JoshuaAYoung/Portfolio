@@ -431,17 +431,17 @@ fieldset {
 }
 
 .mailToLink, .githubLink, .linkedinLink {
-  width: 27%;
+  width: 22%;
   display: inline-block;
   text-align: center;
 }
 
 .mailToLink {
-  margin-left: 8%;
+  margin-left: 15%;
 }
 
 .linkedinLink {
-  margin-right: 8%;
+  margin-right: 15%;
 }
 
 
