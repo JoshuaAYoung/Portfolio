@@ -431,23 +431,16 @@ fieldset {
 }
 
 .mailToLink, .githubLink, .linkedinLink {
-  width: 22%;
+  width: 18%;
   display: inline-block;
   text-align: center;
-}
-
-.mailToLink {
-  margin-left: 15%;
-}
-
-.linkedinLink {
-  margin-right: 15%;
 }
 
 
 .socialLogoContainer {
   padding-top: 30px;
   width: 100%;
+  text-align: center;
 }
 
 
