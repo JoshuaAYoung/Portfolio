@@ -394,6 +394,8 @@ hr {
   font-size: 20px;
   text-align: center;
   font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 fieldset {
@@ -710,12 +712,5 @@ fieldset {
 
   .demoProjectImage {
     height: 18vw;
-  }
-}
-
-@-moz-document url-prefix() {
-  .formLegend {
-      margin-left: auto;
-      margin-right: auto;
   }
 }
