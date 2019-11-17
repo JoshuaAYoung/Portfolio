@@ -712,3 +712,11 @@ fieldset {
     height: 18vw;
   }
 }
+
+@media screen and (-moz-images-in-menus: 0) {
+  .formLegend {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
