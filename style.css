@@ -430,13 +430,29 @@ fieldset {
   width: 50px;
 }
 
+.mailToLink, .githubLink, .linkedinLink {
+  width: 27%;
+  display: inline-block;
+  text-align: center;
+}
+
+.mailToLink {
+  margin-left: 8%;
+}
+
+.linkedinLink {
+  margin-right: 8%;
+}
+
+
 .socialLogoContainer {
   padding-top: 30px;
   width: 100%;
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-evenly; */
 }
+
 
 .copyright {
   text-align: center;
@@ -711,6 +727,6 @@ fieldset {
   }
 
   .demoProjectImage {
-    height: 18vw;
+    height: 17.9vw;
   }
 }

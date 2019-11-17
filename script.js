@@ -238,7 +238,7 @@ function handleDescription() {
         }
         else {
             $(this).find(".projectDescription").slideUp("slow", "swing");
-            $(this).find(".projectLanguages").show("slow");
+            $(this).find(".projectLanguages").show();
         }
     })
     $(document).click(function() { 
