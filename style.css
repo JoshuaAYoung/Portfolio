@@ -123,6 +123,7 @@ p {
   position: absolute;
   right: 30px;
   top: 0;
+  outline: none;
 }
 
 .cross {
@@ -136,13 +137,12 @@ p {
   position: absolute;
   right: 33px;
   top: 0;
+  outline: none;
 }
 
 .joshImage {
   width: 180px;
   margin: 105px 0 0 28px;
-  display: inline-block;
-  z-index: -1;
 }
 
 .titleTextContainer {
@@ -259,7 +259,7 @@ p {
 }
 
 .projectImageContainer:hover > img {
-  filter: brightness(20%);
+  filter: brightness(35%);
 }
 
 .projectImageContainer {
@@ -598,6 +598,7 @@ fieldset {
   .joshImage {
     width: 400px;
     margin: 110px 0 0 50px;
+    height: 470px;
   }
 
 .bioText {
