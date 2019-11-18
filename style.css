@@ -710,6 +710,7 @@ fieldset {
 
   .bioText {
     width: 620px;
+    font-size: 18px;
   }
 
   .fake800, .fake980 {
@@ -722,5 +723,12 @@ fieldset {
 
   .demoProjectImage {
     height: 17.9vw;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .bioText {
+    width: 620px;
+    font-size: 20px;
   }
 }
