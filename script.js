@@ -122,7 +122,6 @@ function generateProject(index) {
         <p class="projectLinks"><a href="${PROJECTS[index].code}" target="_blank" class="projectLinks">CODE</a><span class="projectBullet"><img src="./images/gearlogo.svg" alt="gear logo" class="logoBreak"></span><a href="${PROJECTS[index].demo}" target="_blank" class="projectLinks">DEMO</a>
     </div>
     <p class="projectLanguages">${PROJECTS[index].languages}</p>
-    <hr class="projectLine">
 </div>`}
 
 function generateProjectHtml() {
@@ -134,28 +133,29 @@ function generateProjectHtml() {
 }
 
 function generateEmpty() {
-    $(".projectsContainer").empty;
+    let projectContainer = $(".projectsContainer");
+    projectContainer.empty;
     if (PROJECTS.length % 2 != 0) {
-        $(".projectsContainer").append('<div class="project fake800"></div>');
+        projectContainer.append('<div class="project fake800"></div>');
     };
     if (PROJECTS.length % 3 == 1) {
-        $(".projectsContainer").append('<div class="project fake980"></div>');
-        $(".projectsContainer").append('<div class="project fake980"></div>');
+        projectContainer.append('<div class="project fake980"></div>');
+        projectContainer.append('<div class="project fake980"></div>');
     }
     else if (PROJECTS.length % 3 == 2) {
-        $(".projectsContainer").append('<div class="project fake980"></div>');
+        projectContainer.append('<div class="project fake980"></div>');
     };
     if (PROJECTS.length % 4 == 1) {
-        $(".projectsContainer").append('<div class="project fake1200"></div>');
-        $(".projectsContainer").append('<div class="project fake1200"></div>');
-        $(".projectsContainer").append('<div class="project fake1200"></div>');
+        projectContainer.append('<div class="project fake1200"></div>');
+        projectContainer.append('<div class="project fake1200"></div>');
+        projectContainer.append('<div class="project fake1200"></div>');
     }
     else if (PROJECTS.length % 4 == 2) {
-        $(".projectsContainer").append('<div class="project fake1200"></div>');
-        $(".projectsContainer").append('<div class="project fake1200"></div>');
+        projectContainer.append('<div class="project fake1200"></div>');
+        projectContainer.append('<div class="project fake1200"></div>');
     }
     else if (PROJECTS.length % 4 == 3) {
-        $(".projectsContainer").append('<div class="project fake1200"></div>');
+        projectContainer.append('<div class="project fake1200"></div>');
     };
 }
 

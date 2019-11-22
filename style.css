@@ -285,7 +285,7 @@ p {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: bold;
-  margin: 30px 0 3px;
+  margin: 20px 0 3px;
 }
 
 .projectLinks {
@@ -319,11 +319,6 @@ margin: 0 5% 14px;
 
 .fake800, .fake980, .fake1200 {
   display: none;
-}
-
-hr {
-  width: 75px;
-  border-top: 2px solid #818282;
 }
 
 .portfolioProj {
@@ -474,6 +469,10 @@ fieldset {
   .joshImage {
     width: 55%;
   }
+  
+  .project {
+    padding-bottom: 2%;
+  }
 
   .titleText {
     font-size: 60px;
@@ -551,14 +550,14 @@ fieldset {
     height: 3.8rem;
   }
 
-.projectGeneratorList {
-  width: 300px;
-}
+  .projectGeneratorList {
+    width: 300px;
+  }
 
   .inputText {
     width: 300px;
   }
-  
+
 }
 
 @media only screen and (min-width: 800px) {
@@ -579,6 +578,8 @@ fieldset {
 
   .project {
     width: 45%;
+    margin: 50px auto 0;
+    padding-bottom: initial;
   }
   .projectImage {
   width: 100%;
@@ -586,7 +587,6 @@ fieldset {
 
   .projectDescription {
     margin: 0 0 14px;
-  
   }
 
   .titleTextContainer{
@@ -643,7 +643,7 @@ fieldset {
   }
 
   .titleTextContainer{
-    top: 10px;
+    top: -5px;
     left: 500px;
     right: auto;
   }
@@ -728,7 +728,8 @@ fieldset {
 
 @media only screen and (min-width: 1400px) {
   .bioText {
-    width: 620px;
+    width: 800px;
     font-size: 20px;
+
   }
 }
