@@ -9,61 +9,6 @@ const PROJECTS = [
             code: "https://github.com/JoshuaAYoung/QuizApp",
             demo: "https://joshuaayoung.github.io/QuizApp/",
             class: "projectImage"
-        },
-        //2
-        {
-            title: "Harry Potter and the Quiz of Ages",
-            image: "./images/onescreenshot.jpg",
-            imageAlt: "Harry Potter Quiz App Screenshot",
-            languages: "HTML | CSS | JavaScript | jQuery",
-            description: "is a quiz app built in HTML, CSS, JavaScript, and jQuery. The single page of HTML is refreshed using jQuery event handlers to replace content on the page. A multidimensional array handles the data and keeps track of the users progress.",
-            code: "https://github.com/JoshuaAYoung/QuizApp",
-            demo: "https://joshuaayoung.github.io/QuizApp/",
-            class: "projectImage"
-        },
-        //3
-        {
-            title: "Harry Potter and the Quiz of Ages",
-            image: "./images/onescreenshot.jpg",
-            imageAlt: "Harry Potter Quiz App Screenshot",
-            languages: "HTML | CSS | JavaScript | jQuery",
-            description: "is a quiz app built in HTML, CSS, JavaScript, and jQuery. The single page of HTML is refreshed using jQuery event handlers to replace content on the page. A multidimensional array handles the data and keeps track of the users progress.",
-            code: "https://github.com/JoshuaAYoung/QuizApp",
-            demo: "https://joshuaayoung.github.io/QuizApp/",
-            class: "projectImage"
-        },
-        //4
-        {
-            title: "Harry Potter and the Quiz of Ages",
-            image: "./images/onescreenshot.jpg",
-            imageAlt: "Harry Potter Quiz App Screenshot",
-            languages: "HTML | CSS | JavaScript | jQuery",
-            description: "is a quiz app built in HTML, CSS, JavaScript, and jQuery. The single page of HTML is refreshed using jQuery event handlers to replace content on the page. A multidimensional array handles the data and keeps track of the users progress.",
-            code: "https://github.com/JoshuaAYoung/QuizApp",
-            demo: "https://joshuaayoung.github.io/QuizApp/",
-            class: "projectImage"
-        },
-        //5
-        {
-            title: "Harry Potter and the Quiz of Ages",
-            image: "./images/onescreenshot.jpg",
-            imageAlt: "Harry Potter Quiz App Screenshot",
-            languages: "HTML | CSS | JavaScript | jQuery",
-            description: "is a quiz app built in HTML, CSS, JavaScript, and jQuery. The single page of HTML is refreshed using jQuery event handlers to replace content on the page. A multidimensional array handles the data and keeps track of the users progress.",
-            code: "https://github.com/JoshuaAYoung/QuizApp",
-            demo: "https://joshuaayoung.github.io/QuizApp/",
-            class: "projectImage"
-        },
-        //6
-        {
-            title: "Harry Potter and the Quiz of Ages",
-            image: "./images/onescreenshot.jpg",
-            imageAlt: "Harry Potter Quiz App Screenshot",
-            languages: "HTML | CSS | JavaScript | jQuery",
-            description: "is a quiz app built in HTML, CSS, JavaScript, and jQuery. The single page of HTML is refreshed using jQuery event handlers to replace content on the page. A multidimensional array handles the data and keeps track of the users progress.",
-            code: "https://github.com/JoshuaAYoung/QuizApp",
-            demo: "https://joshuaayoung.github.io/QuizApp/",
-            class: "projectImage"
         }
     ]
 
@@ -218,7 +163,7 @@ function getInput() {
 }
 
 function handleStart() {
-    $(".copyright").html(generateCopyright())
+    $(".copyright").html(generateCopyright());
     generateEmpty();
 }
 
