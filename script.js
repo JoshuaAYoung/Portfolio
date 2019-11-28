@@ -7,7 +7,18 @@ const PROJECTS = [
             languages: "HTML | CSS | JavaScript | jQuery",
             description: "is a quiz app built in HTML, CSS, JavaScript, and jQuery. The single page of HTML is refreshed using jQuery event handlers to replace content on the page. A multidimensional array handles the data and keeps track of the users progress.",
             code: "https://github.com/JoshuaAYoung/QuizApp",
-            demo: "https://joshuaayoung.github.io/QuizApp/",
+            demo: "https://joshyoung.net/hpquizofages/",
+            class: "projectImage"
+        },
+        //2
+        {
+            title: "PUBcrawlHUB",
+            image: "./images/twoscreenshot.jpg",
+            imageAlt: "Pub Crawl Hub Website Screenshot",
+            languages: "HTML | CSS | JavaScript | jQuery",
+            description: "is an app that takes a city as input and makes calls to the OpenBrewery api to find bars. It then takes those bars and makes another call to the MapBox api and populates the MapBox map plugin on the site based on the results. The Sortable jQuery plugin provides users with an easy way to sort the list of bars to map their final pub crawl route.",
+            code: "https://github.com/JoshuaAYoung/PUBCrawlHub",
+            demo: "https://joshyoung.net/pubcrawlhub",
             class: "projectImage"
         }
     ]
