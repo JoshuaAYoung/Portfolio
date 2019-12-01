@@ -30,11 +30,11 @@ const PROJECTS = [
         description: ""
     }
 
-//RANDOM
-
+////// RANDOM ///////
+//moves the giant hello up a little
 function moveHelloUp() {
     if ($(window).width() >= 780 && $(window).width() < 960) {
-        $(".titleTextContainer").css("top", "-10px");
+        $(".titleTextContainer").css("top", "-70px");
     }
 }
 
