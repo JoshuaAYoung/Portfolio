@@ -6,9 +6,9 @@ The data array functionality is demo'd at the bottom of the app using a simple, 
 
 Taking it a step further, a blank form submission will make a fetch request to an api and generate a random cat image to serve as the project screenshot. 
 
-At this point, you might be thinking to yourself that this is way overkill for a simple portfolio website... And to that I say: You are absolutely correct! I could have provided raw text and passed along the same information. But why waste an opportunity to showcase some of the experience I've picked up? Why not provide another example the transferability of my design skills? Isn't the true purpose of a portfolio to showcase one's talents? And if I can learn a thing or two along the way by doing another rep... Seems like a win - win (win?).
+At this point, you might be thinking to yourself that this is way overkill for a simple portfolio website... And to that I say: You are absolutely correct! I could have provided raw text and passed along the same information. But why waste an opportunity to showcase some of the experience I've picked up? Why not provide another example of the transferability of my design skills? Isn't the true purpose of a portfolio to showcase someone's talents? And if I can learn a thing or two along the way by doing another rep... Seems like a win - win (win?).
 
-Plus. Look at those cats. How can you be upset at that...? Are you a monster?
+Plus. Look at those cats. How can you be upset at that those faces...? Are you a monster?
 
 ## Built With
 
