@@ -1,37 +1,37 @@
 const PROJECTS = [
-        //1
-        {
-            title: "Harry Potter and the Quiz of Ages",
-            image: "./images/onescreenshot.jpg",
-            imageAlt: "Harry Potter Quiz App Screenshot",
-            languages: "HTML | CSS | JavaScript | jQuery",
-            description: "is a quiz app built in HTML, CSS, JavaScript, and jQuery. The single page of HTML is refreshed using jQuery event handlers to replace content on the page. A multidimensional array handles the data and keeps track of the users progress.",
-            code: "https://github.com/JoshuaAYoung/QuizApp",
-            demo: "https://joshyoung.net/hpquizofages/",
-            class: "projectImage"
-        },
-        //2
-        {
-            title: "PUBcrawlHUB",
-            image: "./images/twoscreenshot.jpg",
-            imageAlt: "Pub Crawl Hub Website Screenshot",
-            languages: "HTML | CSS | JavaScript | jQuery",
-            description: "is an app that takes a city as input and makes calls to the OpenBrewery api to find bars. It then takes those bars and makes another call to the MapBox api and populates the MapBox map plugin on the site based on the results. The Sortable jQuery plugin provides users with an easy way to sort the list of bars to map their final pub crawl route.",
-            code: "https://github.com/JoshuaAYoung/PUBCrawlHub",
-            demo: "https://joshyoung.net/pubcrawlhub",
-            class: "projectImage"
-        }
-    ]
-
-    const demoData = {
-        title: "",
-        image: "",
-        languages: "",
-        description: ""
+    //1
+    {
+        title: "Harry Potter and the Quiz of Ages",
+        image: "./images/onescreenshot.jpg",
+        imageAlt: "Harry Potter Quiz App Screenshot",
+        languages: "HTML | CSS | JavaScript | jQuery",
+        description: "is a quiz app built in HTML, CSS, JavaScript, and jQuery. The single page of HTML is refreshed using jQuery event handlers to replace content on the page. A multidimensional array handles the data and keeps track of the users progress.",
+        code: "https://github.com/JoshuaAYoung/QuizApp",
+        demo: "https://joshyoung.net/hpquizofages/",
+        class: "projectImage"
+    },
+    //2
+    {
+        title: "PUBcrawlHUB",
+        image: "./images/twoscreenshot.jpg",
+        imageAlt: "Pub Crawl Hub Website Screenshot",
+        languages: "HTML | CSS | JavaScript | jQuery",
+        description: "is an app that takes a city as input and makes calls to the OpenBrewery api to find bars. It then takes those bars and makes another call to the MapBox api and populates the MapBox map plugin on the site based on the results. The Sortable jQuery plugin provides users with an easy way to sort the list of bars to map their final pub crawl route.",
+        code: "https://github.com/JoshuaAYoung/PUBCrawlHub",
+        demo: "https://joshyoung.net/pubcrawlhub",
+        class: "projectImage"
     }
+]
 
-////// RANDOM ///////
-//moves the giant hello up a little
+const demoData = {
+    title: "",
+    image: "",
+    languages: "",
+    description: ""
+}
+
+////// HELPER FUNCTIONS ///////
+//moves the giant hello up a little responsively
 function moveHelloUp() {
     if ($(window).width() >= 780 && $(window).width() < 960) {
         $(".titleTextContainer").css("top", "-70px");
@@ -46,7 +46,7 @@ function moveHelloDown() {
 
 function buttonScroll() {
     mybutton = document.getElementById("scrollTop");
-    window.onscroll = function() {scrollFunction()};
+    window.onscroll = function () { scrollFunction() };
     function scrollFunction() {
         if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
             mybutton.style.display = "block";
@@ -82,12 +82,13 @@ function generateProject(index) {
 
 function generateProjectHtml() {
     let projectHtml = "";
-    for (i=0; i < PROJECTS.length; i++) {
+    for (i = 0; i < PROJECTS.length; i++) {
         projectHtml += generateProject(i);
     };
     return projectHtml;
 }
 
+//Need empty divs in order to make the flexbox work properly - number of empty divs depends on the width of the window (responsive) and the number of items in the portfolio
 function generateEmpty() {
     let projectContainer = $(".projectsContainer");
     projectContainer.empty;
@@ -115,7 +116,7 @@ function generateEmpty() {
     };
 }
 
-//CODE DEMO
+//CODE DEMO - functions to support the form that demo the json-esque data array
 
 function displayResults(responseJson) {
     let catImage = responseJson[0].url;
@@ -127,30 +128,31 @@ function displayResults(responseJson) {
 }
 
 function getImage() {
-    let url="https://api.thecatapi.com/v1/images/search";
+    let url = "https://api.thecatapi.com/v1/images/search";
     fetch(url)
-    .then(response => {
-      if (response.ok) {
-        return response.json();
-      }
-      throw new Error(response.statusText);
-    })
-    .then(responseJson => displayResults(responseJson))
-    .catch(err => {
-      alert(`Something went wrong: ${err.message}`);
-    });
+        .then(response => {
+            if (response.ok) {
+                return response.json();
+            }
+            throw new Error(response.statusText);
+        })
+        .then(responseJson => displayResults(responseJson))
+        .catch(err => {
+            alert(`Something went wrong: ${err.message}`);
+        });
 }
 
-function generateDemoProject(title, link, languages, description) {   
+function generateDemoProject(title, link, languages, description) {
     PROJECTS.push(
-        {title: title,
-        image: link,
-        imageAlt: "Probably an image of a cat",
-        languages: languages,
-        description: description,
-        code: "https://github.com/JoshuaAYoung",
-        demo: "index.html",
-        class: "projectImage demoProjectImage"
+        {
+            title: title,
+            image: link,
+            imageAlt: "Probably an image of a cat",
+            languages: languages,
+            description: description,
+            code: "https://github.com/JoshuaAYoung",
+            demo: "index.html",
+            class: "projectImage demoProjectImage"
         }
     )
     $(".projectsContainer").empty();
@@ -163,7 +165,7 @@ function generateDemoProject(title, link, languages, description) {
 //HANDLERS
 
 function getInput() {
-    $('.portfolioDemo').on('submit', function(event){
+    $('.portfolioDemo').on('submit', function (event) {
         event.preventDefault();
         demoData.title = $(this).find('input[name="projecttitle"]').val();
         demoData.image = $(this).find('input[name="imagelink"]').val();
@@ -184,7 +186,7 @@ function pushProjects() {
 
 function handleDescription() {
     $(".projectDescription").hide();
-    $(".project").click(function(event) {
+    $(".project").click(function (event) {
         if (!$(this).find(".projectDescription").hasClass("shown")) {
             event.stopPropagation();
             event.preventDefault();
@@ -197,7 +199,7 @@ function handleDescription() {
             $(this).find(".projectLanguages").show();
         }
     })
-    $(document).click(function() { 
+    $(document).click(function () {
         if ($(".projectDescription").hasClass("shown")) {
             $(".projectDescription").slideUp("slow", "swing");
             $(".projectLanguages").show();
@@ -207,7 +209,7 @@ function handleDescription() {
 }
 
 function handleBio() {
-    $(".bioText").click(function() {
+    $(".bioText").click(function () {
         if ($(".expandedBio").hasClass("hidden") && $(window).width() < 980) {
             event.preventDefault();
             $(".expandBio").css("display", "none");
@@ -228,21 +230,21 @@ function handleBio() {
 function handleHamburger() {
     $(".cross").hide();
     $(".navMenuMobile").hide();
-    $(".hamburger").click(function() {
-        $(".navMenuMobile").slideToggle("slow", function() {
+    $(".hamburger").click(function () {
+        $(".navMenuMobile").slideToggle("slow", function () {
             $(".hamburger").hide();
             $(".cross").show();
         });
     })
-    $(".cross").click(function() {
-        $(".navMenuMobile").slideToggle("slow", function() {
-        $(".cross").hide();
-        $(".hamburger").show();
+    $(".cross").click(function () {
+        $(".navMenuMobile").slideToggle("slow", function () {
+            $(".cross").hide();
+            $(".hamburger").show();
         });
-        })
+    })
 }
 
-$(function(){
+$(function () {
     handleStart();
     pushProjects();
     handleHamburger();
