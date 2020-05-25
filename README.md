@@ -1,6 +1,6 @@
 # Josh Young - Portfolio
 [![CodeFactor](https://www.codefactor.io/repository/github/joshuaayoung/portfolio/badge)](https://www.codefactor.io/repository/github/joshuaayoung/portfolio)
-[Click here for the live version](https://joshyoung.net)
+## Live App: [Portfolio](https://joshyoung.net)
 
 This fully responsive portfolio website was built during my time in Thinkful's full-stack bootcamp. The design and CSS are all from scratch - no templates, no bootstrap. To push myself and my learning, I decided to store everything in a JSON-esque array that facilitates the addition of new projects. After all, if we're not moving towards iteration, then what are we doing? 
 
