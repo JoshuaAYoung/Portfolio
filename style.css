@@ -90,7 +90,7 @@ p {
   right: 30px;
   top: 18px;
 }
-
+ 
 .menuItem {
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
@@ -249,7 +249,8 @@ p {
 
 .projectImage {
   width: 300px;
-  border: 2px solid #818282;
+  /* border: 2px solid #818282; */
+  box-shadow: 2px 2px 6px 0 #818282;
   z-index: 2;
   object-fit: cover;
 }
@@ -286,6 +287,7 @@ p {
   font-size: 16px;
   font-weight: bold;
   margin: 20px 0 3px;
+  width: auto;
 }
 
 .projectLinks {
@@ -293,6 +295,7 @@ p {
   font-size: 22px;
   font-weight: 700;
   margin: auto 5px;
+  text-decoration: underline;
 }
 
 .logoBreak {
@@ -309,12 +312,18 @@ p {
   font-size: 13px;
   font-weight: 400;
   margin: 0 0 14px;
+  background-color: #eeeff0;
+  display: inline-block;
 }
 
 .projectDescription {
 font-size: 13px;
 font-weight: 400;
 margin: 0 5% 14px;
+}
+
+.descriptionText {
+  background-color: #eeeff0;
 }
 
 .fake800, .fake980, .fake1200 {

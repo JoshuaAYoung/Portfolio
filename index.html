@@ -1,161 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Josh Young's Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Josh Young's Portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="normalize.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto:300,400,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./images/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./images/favicon-16x16.png"
+      sizes="16x16"
+    />
+  </head>
 
-<head>
-  <title>Josh Young's Portfolio</title>
-  <meta charset="utf-8" />
-  <meta name="description" content="Josh Young's Portfolio" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" type="text/css" href="normalize.css" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Roboto:300,400,700,900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <link rel="icon" type="image/png" href="./images/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="./images/favicon-16x16.png" sizes="16x16" />
-</head>
+  <body>
+    <header class="headerContainer">
+      <nav class="navMobile">
+        <a href="index.html"
+          ><img
+            src="./images/gearlogo.svg"
+            alt="gear logo bullet"
+            class="gearIcon"
+          />
+          <h1 class="name">Josh Young</h1>
+        </a>
+        <button class="hamburger">&#9776;</button>
+        <button class="cross">X</button>
+      </nav>
+      <nav class="navMenuMobile">
+        <ul class="navItemsMobile">
+          <li>
+            <a href="index.html" class="menuItem home">Home.</a>
+          </li>
+          <li>
+            <a href="mailto:joshua@young.net" class="menuItem">Email.</a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/JoshuaAYoung"
+              target="_blank"
+              class="menuItem"
+              >Github.</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/joshuaalexanderyoung"
+              target="_blank"
+              class="menuItem"
+              >LinkedIn.</a
+            >
+          </li>
+          <li>
+            <a href="./images/resume.pdf" target="_blank" class="menuItem"
+              >Resume.</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <nav class="navDesktop">
+        <div class="navMenuDesktop">
+          <a href="index.html" class="menuDesktop">Home</a>
+          <span class="projectBullet"
+            ><img src="./images/gearlogo.svg" alt="gear logo" class="menuBreak"
+          /></span>
+          <a href="mailto:joshua@young.net" class="menuDesktop" target="_blank"
+            >Email</a
+          >
+          <span class="projectBullet"
+            ><img src="./images/gearlogo.svg" alt="gear logo" class="menuBreak"
+          /></span>
+          <a
+            href="https://github.com/JoshuaAYoung"
+            target="_blank"
+            class="menuDesktop"
+            >Github</a
+          >
+          <span class="projectBullet"
+            ><img src="./images/gearlogo.svg" alt="gear logo" class="menuBreak"
+          /></span>
+          <a
+            href="https://www.linkedin.com/in/joshua-young-250a7512"
+            target="_blank"
+            class="menuDesktop"
+            >LinkedIn</a
+          >
+          <span class="projectBullet"
+            ><img src="./images/gearlogo.svg" alt="gear logo" class="menuBreak"
+          /></span>
+          <a href="./images/resume.pdf" target="_blank" class="menuDesktop"
+            >Resume</a
+          >
+        </div>
+      </nav>
+    </header>
 
-<body>
-  <header class="headerContainer">
-    <nav class="navMobile">
-      <a href="index.html"><img src="./images/gearlogo.svg" alt="gear logo bullet" class="gearIcon" />
-        <h1 class="name">Josh Young</h1>
-      </a>
-      <button class="hamburger">&#9776;</button>
-      <button class="cross">X</button>
-    </nav>
-    <nav class="navMenuMobile">
-      <ul class="navItemsMobile">
-        <li>
-          <a href="index.html" class="menuItem home">Home.</a>
-        </li>
-        <li>
-          <a href="mailto:joshua@young.net" class="menuItem">Email.</a>
-        </li>
-        <li>
-          <a href="https://github.com/JoshuaAYoung" target="_blank" class="menuItem">Github.</a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/joshua-young-250a7512" target="_blank" class="menuItem">LinkedIn.</a>
-        </li>
-        <li>
-          <a href="./images/resume.pdf" target="_blank" class="menuItem">Resume.</a>
-        </li>
-      </ul>
-    </nav>
-    <nav class="navDesktop">
-      <div class="navMenuDesktop">
-        <a href="index.html" class="menuDesktop">Home</a>
-        <span class="projectBullet"><img src="./images/gearlogo.svg" alt="gear logo" class="menuBreak" /></span>
-        <a href="mailto:joshua@young.net" class="menuDesktop" target="_blank">Email</a>
-        <span class="projectBullet"><img src="./images/gearlogo.svg" alt="gear logo" class="menuBreak" /></span>
-        <a href="https://github.com/JoshuaAYoung" target="_blank" class="menuDesktop">Github</a>
-        <span class="projectBullet"><img src="./images/gearlogo.svg" alt="gear logo" class="menuBreak" /></span>
-        <a href="https://www.linkedin.com/in/joshua-young-250a7512" target="_blank" class="menuDesktop">LinkedIn</a>
-        <span class="projectBullet"><img src="./images/gearlogo.svg" alt="gear logo" class="menuBreak" /></span>
-        <a href="./images/resume.pdf" target="_blank" class="menuDesktop">Resume</a>
+    <main>
+      <section class="hero">
+        <img
+          src="./images/joshyoung.jpg"
+          alt="Josh Young's profile picture"
+          class="joshImage"
+        />
+        <div class="titleTextContainer">
+          <h2 class="titleText">Hello.</h2>
+        </div>
+        <p class="bioText" id="bioText" aria-live="polite">
+          I'm Josh, a software engineer of the full-stack variety. In addition
+          to
+          <span class="boldBioText"
+            >HTML, CSS, JavaScript, React, Express, and PostgreSQL</span
+          >
+          I bring a lot of relevant skills to the table from my previous career
+          as a licensed<span class="expandedBio hidden">
+            architect. Rigorous problem solving. Intuitive design. Precision. A
+            passion for learning, every... single... day. <br /><br />
+            When I'm not coding, you’ll usually find me hacking life. I’m such a
+            passionate problem solver, that I have filled my life with projects.
+            From building my own 3d printer to making furniture. House
+            remodeling. I’m even building my own teardrop trailer.
+            <br /><br />
+            When I'm not obsessing over a project at work or at home, you'll
+            likely find me on an adventure with tiny humans (the progeny) or
+            immersed in a game.
+            <span class="collapseBio" aria-controls="bioText">
+              &lt; Collapse</span
+            ></span
+          ><span class="expandBio" aria-controls="bioText"
+            >... Read More &gt;</span
+          >
+        </p>
+      </section>
+      <div class="portfolioContainer" aria-live="polite">
+        <div class="portTitleContainer">
+          <h2 class="portfolioTitle">Portfolio.</h2>
+          <h3 class="portfolioInstructions">
+            <span class="click">Click</span> on a project to learn more.
+          </h3>
+        </div>
+        <div class="projectsContainer" aria-live="polite"></div>
       </div>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero">
-      <img src="./images/joshyoung.jpg" alt="Josh Young's profile picture" class="joshImage" />
-      <div class="titleTextContainer">
-        <h2 class="titleText">Hello.</h2>
-      </div>
-      <p class="bioText" id="bioText" aria-live="polite">
-        I'm Josh, a software engineer of the full-stack variety. In addition
-        to
-        <span class="boldBioText">HTML, CSS, JavaScript, React, Express, and PostgreSQL</span> I bring a
-        lot of relevant skills to the table from my previous career as a
-        licensed<span class="expandedBio hidden">
-          architect. Rigorous problem solving. Intuitive design. Precision.
-          A passion for learning, every... single... day. <br /><br />
-          When I'm not coding, you’ll usually find me hacking life. I’m such a
-          passionate problem solver, that I have filled my life with projects.
-          From building my own 3d printer to making furniture. House
-          remodeling. I’m even building my own teardrop trailer.
-          <br /><br />
-          When I'm not obsessing over a project at work or at home, you'll
-          likely find me on an adventure with tiny humans (the progeny) or
-          immersed in a game.
-          <span class="collapseBio" aria-controls="bioText">
-            &lt; Collapse</span></span><span class="expandBio" aria-controls="bioText">... Read More &gt;</span>
-      </p>
-    </section>
-    <div class="portfolioContainer" aria-live="polite">
-      <div class="portTitleContainer">
-        <h2 class="portfolioTitle">Portfolio.</h2>
-        <h3 class="portfolioInstructions">
-          <span class="click">Click</span> on a project to learn more.
-        </h3>
-      </div>
-      <div class="projectsContainer" aria-live="polite"></div>
-    </div>
-    <button onclick="topFunction()" id="scrollTop" title="Go to top">
-      ^
-    </button>
-    <section class="portfolioProj">
-      <div class="demoContainer">
-        <h2 class="portfolioProjText">Demo $(this).</h2>
-      </div>
-      <p class="portfolioProjDescription">
-        Want to try out the JSON-like array that stores project data here? Fill out the form below or just click submit
-        to generate
-        a random project and add it to the page. You can also click
-        <a href="https://github.com/JoshuaAYoung/portfolio" class="portfolioLink" target="blank">here</a>
-        to see the source code for this website.
-      </p>
-      <form class="portfolioDemo">
-        <fieldset>
-          <legend class="formLegend">Project Generator</legend>
-          <ul class="projectGeneratorList">
-            <li class="formList">
-              <label class="demoOption" for="firstOption">Project Title:</label>
-            </li>
-            <li class="inputList">
-              <input type="text" name="projecttitle" id="firstOption" class="inputText" />
-            </li>
-            <li class="formList">
-              <label class="demoOption" for="secondOption">Image Link:</label>
-            </li>
-            <li class="inputList">
-              <input type="text" name="imagelink" id="secondOption" class="inputText" />
-            </li>
-            <li class="formList">
-              <label class="demoOption" for="thirdOption">Languages Used:</label>
-            </li>
-            <li class="inputList">
-              <input type="text" name="languagesused" id="thirdOption" class="inputText" />
-            </li>
-            <li class="formList">
-              <label class="demoOption" for="fourthOption">Description</label>
-            </li>
-            <li class="inputList">
-              <input type="text" name="description" id="fourthOption" class="inputText" />
-            </li>
-          </ul>
-          <button type="submit" id="submitButton">SUBMIT</button>
-        </fieldset>
-      </form>
-    </section>
-  </main>
-  <footer role="contentinfo" class="footerContainer">
-    <section class="socialLogoContainer">
-      <a href="mailto:joshua@young.net" class="mailToLink" target="_blank">
-        <img src="./images/emaillogo.svg" class="socialLogo" alt="email logo icon" />
-      </a>
-      <a href="https://github.com/JoshuaAYoung" target="_blank" class="githubLink">
-        <img src="./images/githublogo.svg" class="socialLogo" alt="github logo icon" />
-      </a>
-      <a href="https://www.linkedin.com/in/joshua-young-250a7512" target="_blank" class="linkedinLink">
-        <img src="./images/linkedinlogo.svg" class="socialLogo" alt="linkedin logo icon" />
-      </a>
-    </section>
-    <p class="copyright"></p>
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="script.js"></script>
-</body>
-
+      <button onclick="topFunction()" id="scrollTop" title="Go to top">
+        ^
+      </button>
+      <section class="portfolioProj">
+        <div class="demoContainer">
+          <h2 class="portfolioProjText">Demo $(this).</h2>
+        </div>
+        <p class="portfolioProjDescription">
+          Want to try out the JSON-like array that stores project data here?
+          Fill out the form below or just click submit to generate a random
+          project and add it to the page.
+        </p>
+        <form class="portfolioDemo">
+          <fieldset>
+            <legend class="formLegend">Project Generator</legend>
+            <ul class="projectGeneratorList">
+              <li class="formList">
+                <label class="demoOption" for="firstOption"
+                  >Project Title:</label
+                >
+              </li>
+              <li class="inputList">
+                <input
+                  type="text"
+                  name="projecttitle"
+                  id="firstOption"
+                  class="inputText"
+                />
+              </li>
+              <li class="formList">
+                <label class="demoOption" for="secondOption">Image Link:</label>
+              </li>
+              <li class="inputList">
+                <input
+                  type="text"
+                  name="imagelink"
+                  id="secondOption"
+                  class="inputText"
+                />
+              </li>
+              <li class="formList">
+                <label class="demoOption" for="thirdOption"
+                  >Languages Used:</label
+                >
+              </li>
+              <li class="inputList">
+                <input
+                  type="text"
+                  name="languagesused"
+                  id="thirdOption"
+                  class="inputText"
+                />
+              </li>
+              <li class="formList">
+                <label class="demoOption" for="fourthOption">Description</label>
+              </li>
+              <li class="inputList">
+                <input
+                  type="text"
+                  name="description"
+                  id="fourthOption"
+                  class="inputText"
+                />
+              </li>
+            </ul>
+            <button type="submit" id="submitButton">SUBMIT</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer role="contentinfo" class="footerContainer">
+      <section class="socialLogoContainer">
+        <a href="mailto:joshua@young.net" class="mailToLink" target="_blank">
+          <img
+            src="./images/emaillogo.svg"
+            class="socialLogo"
+            alt="email logo icon"
+          />
+        </a>
+        <a
+          href="https://github.com/JoshuaAYoung"
+          target="_blank"
+          class="githubLink"
+        >
+          <img
+            src="./images/githublogo.svg"
+            class="socialLogo"
+            alt="github logo icon"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/joshua-young-250a7512"
+          target="_blank"
+          class="linkedinLink"
+        >
+          <img
+            src="./images/linkedinlogo.svg"
+            class="socialLogo"
+            alt="linkedin logo icon"
+          />
+        </a>
+      </section>
+      <p class="copyright"></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
