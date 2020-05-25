@@ -54,7 +54,7 @@ const PROJECTS = [
     imageAlt: "Harry Potter Quiz App Screenshot",
     languages: "jQuery | JavaScript | HTML | CSS",
     description:
-      "This quiz app was built in HTML, CSS, JavaScript, and jQuery. The single page of HTML is refreshed using jQuery event handlers to replace content on the page. A json object handles the data and keeps track of the user's progress. The design and CSS were scratch built.",
+      "This quiz app uses a view that's refreshed using jQuery event handlers to replace content on the page. A json-like object handles the data and keeps track of the user's progress. Design and CSS were scratch built.",
     code: "https://github.com/JoshuaAYoung/QuizApp",
     demo: "https://joshyoung.net/hpquizofages/",
     class: "projectImage",
