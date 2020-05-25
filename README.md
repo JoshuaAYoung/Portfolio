@@ -14,7 +14,7 @@ Plus. Look at those cats. How can you be upset at that those faces? Are you a mo
 
 ## Built With
 
-* [HTML](https://html.com/)
+* [HTML 5](https://html.com/)
 * [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
 * [JAVASCRIPT](https://www.javascript.com/)
 * [JQUERY](https://jquery.com/)
