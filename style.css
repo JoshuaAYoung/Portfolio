@@ -40,8 +40,8 @@ p {
   z-index: 40;
 }
 
-.gearIcon {
-  width: 20px;
+.logoImage {
+  width: 30px;
   margin-left: 15px;
 }
 
@@ -53,8 +53,8 @@ p {
   display: inline-block;
   letter-spacing: -1px;
   margin: 18px 0 0 -1px;
-  vertical-align: 1px;
-  margin-left: 5px;
+  vertical-align: 8px;
+  margin-left: 9px;
 }
 
 .navMenuMobile {
@@ -69,6 +69,7 @@ p {
   display: block;
   top: 64px;
   z-index: -1;
+  background-position-y: -64px;
 }
 
 .navItemsMobile {
@@ -87,13 +88,12 @@ p {
   text-decoration: none;
   letter-spacing: -1px;
   color: rgb(0, 0, 0);
-  vertical-align: -1px;
 }
 
 .navMenuDesktop {
   position: absolute;
   right: 30px;
-  top: 18px;
+  top: 16px;
 }
 
 .menuItem {
@@ -156,7 +156,7 @@ p {
 }
 
 .helloImage {
-  width: 40vw;
+  width: 35vw;
 }
 
 .helloContainer {
@@ -309,7 +309,7 @@ p {
 
 .menuBreak {
   width: 10px;
-  margin: 18px 4px 0;
+  margin: 18px 6px 0;
 }
 
 .projectLanguages {
@@ -478,12 +478,10 @@ fieldset {
 }
 
 @media only screen and (min-width: 360px) {
-.helloContainer {
-  right: 10%;
-  left: auto;
-  top: 200px;
+  .helloImage {
+    width: 40vw;
+  }
 }
-
 
 @media only screen and (min-width: 420px) {
   .joshImage {
@@ -562,6 +560,17 @@ fieldset {
     font-size: 18px;
     margin: 35px 0 45px;
   }
+
+  .name {
+    font-size: 30px;
+    vertical-align: 9px;
+    margin-top: 16px;
+  }
+
+  .logoImage {
+    width: 34px;
+    margin-left: 30px;
+  }
 }
 
 @media only screen and (min-width: 620px) {
@@ -580,17 +589,8 @@ fieldset {
 }
 
 @media only screen and (min-width: 800px) {
-  .name {
-    font-size: 33px;
-  }
-
   .helloImage {
     width: 35vw;
-  }
-
-  .gearIcon {
-    width: 25px;
-    margin-left: 30px;
   }
 
   .projectsContainer {
@@ -768,4 +768,3 @@ fieldset {
     font-size: 20px;
   }
 }
-
