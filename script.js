@@ -70,18 +70,6 @@ const DEMO = {
 };
 
 ////// HELPER FUNCTIONS ///////
-//moves the giant hello up a little responsively
-function moveHelloUp() {
-  if ($(window).width() >= 780 && $(window).width() < 960) {
-    $(".titleTextContainer").css("top", "-70px");
-  }
-}
-
-function moveHelloDown() {
-  if ($(window).width() >= 780 && $(window).width() < 960) {
-    $(".titleTextContainer").css("top", "");
-  }
-}
 
 function buttonScroll() {
   mybutton = document.getElementById("scrollTop");
@@ -179,8 +167,7 @@ function displayResults(responseJson) {
   let catImage = responseJson[0].url;
   let formTitle = DEMO.title || "Categorically Purrfect";
   let formLink = DEMO.image || catImage;
-  let formLanguages = DEMO.languages || "Akkadian | Sanskrit | Old Norse";
-  console.log("cat descr", DEMO.descriptionCat);
+  let formLanguages = DEMO.languages || "Meow | Hiss | Yowl | Purr";
   let formDescription = DEMO.descriptionInput || DEMO.descriptionCat;
   generateDemoProject(formTitle, formLink, formLanguages, formDescription);
 }
@@ -265,20 +252,18 @@ function handleDescription() {
 
 function handleBio() {
   $(".bioText").click(function () {
-    if ($(".expandedBio").hasClass("hidden") && $(window).width() < 980) {
+    if ($(".expandedBio").hasClass("hidden") && $(window).width() < 800) {
       event.preventDefault();
       $(".expandBio").css("display", "none");
       $(".expandedBio").css("display", "initial");
-      moveHelloUp();
       $(".expandedBio").removeClass("hidden");
     } else if (
       !$(".expandedBio").hasClass("hidden") &&
-      $(window).width() < 980
+      $(window).width() < 800
     ) {
       event.preventDefault();
       $(".expandedBio").css("display", "none");
       $(".expandBio").css("display", "initial");
-      moveHelloDown();
       $(".expandedBio").addClass("hidden");
     }
   });
@@ -309,4 +294,5 @@ $(function () {
   buttonScroll();
   handleDescription();
   getInput();
+  getFact();
 });

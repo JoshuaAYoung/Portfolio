@@ -1,8 +1,8 @@
 body {
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    overflow-x: hidden;
-  }
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
 
 a {
   text-decoration: none;
@@ -17,7 +17,11 @@ p {
   display: none;
 }
 
-.expandBio, .collapseBio, .hamburger, .cross, .projectImage {
+.expandBio,
+.collapseBio,
+.hamburger,
+.cross,
+.projectImage {
   cursor: pointer;
 }
 
@@ -28,7 +32,7 @@ p {
 .headerContainer {
   height: 65px;
   background-image: url("./images/backgrounds/background.svg");
-  background-color: #EDEDED;
+  background-color: #ededed;
   background-size: 250px auto;
   width: 100%;
   position: absolute;
@@ -42,7 +46,7 @@ p {
 }
 
 .name {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 26px;
   margin: auto;
@@ -56,14 +60,14 @@ p {
 .navMenuMobile {
   position: absolute;
   background-image: url(./images/backgrounds/background.svg);
-  background-color: #EDEDED;
+  background-color: #ededed;
   background-size: 250px auto;
   height: 400px;
   width: 100%;
   border-bottom: 2px solid #818282;
   text-align: right;
   display: block;
-  top: 0;
+  top: 64px;
   z-index: -1;
 }
 
@@ -77,7 +81,7 @@ p {
 }
 
 .menuDesktop {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 700;
   text-decoration: none;
@@ -91,9 +95,9 @@ p {
   right: 30px;
   top: 18px;
 }
- 
+
 .menuItem {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: 700;
   letter-spacing: -1px;
@@ -103,7 +107,7 @@ p {
 
 .home:before {
   content: "";
-  background: #70C9BE;
+  background: #70c9be;
   position: absolute;
   right: 32px;
   top: 103px;
@@ -115,14 +119,14 @@ p {
 .hamburger {
   background: none;
   line-height: 45px;
-  padding: 10px 0 10px 20px;
+  padding: 10px 11px 10px 11px;
   border: 0;
   font-size: 1.5em;
   font-weight: bolder;
   cursor: pointer;
   transform: scale(1.5, 1);
   position: absolute;
-  right: 30px;
+  right: 11px;
   top: 0;
   outline: none;
 }
@@ -130,43 +134,41 @@ p {
 .cross {
   background: none;
   line-height: 45px;
-  padding: 10px 0 10px 20px;
+  padding: 10px 15px 10px 15px;
   border: 0;
   font-size: 1.5em;
   cursor: pointer;
   transform: scale(1.5, 1);
   position: absolute;
-  right: 33px;
+  right: 10px;
   top: 0;
   outline: none;
 }
 
 .joshImage {
-  width: 180px;
+  width: 200px;
   margin: 105px 0 0 28px;
 }
 
-.titleTextContainer {
-  top: 160px;
-  display: inline-block;
-  position: absolute;
-  left: 60%;
-  z-index: 1;
+.bioContainer {
+  padding-left: 28px;
+  padding-right: 28px;
 }
 
-.titleTextContainer:before {
-  content: "";
-  background: #70C9BE;
+.helloImage {
+  width: 40vw;
+}
+
+.helloContainer {
   position: absolute;
-  left: .4rem;
-  bottom: 2.4rem;
-  width: 100%;
-  height: 1.5rem;
-  z-index: -1;
+  z-index: 1;
+  right: 5%;
+  left: auto;
+  top: 230px;
 }
 
 .titleText {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-weight: 700;
   letter-spacing: -2px;
@@ -176,15 +178,15 @@ p {
 
 .bioText {
   font-size: 16px;
-  margin: 35px 28px 45px;
+  margin: 25px 0 35px;
 }
 
 .boldBioText {
   font-weight: bold;
 }
 
-
-.expandBio, .collapseBio {
+.expandBio,
+.collapseBio {
   font-weight: bold;
 }
 
@@ -193,19 +195,20 @@ p {
   border-bottom: 2px solid #818282;
   background-image: url("./images/backgrounds/background.svg");
   background-size: 250px auto;
-  background-color: #EDEDED;
+  background-color: #ededed;
   width: 100%;
   padding-bottom: 60px;
 }
 
 .portTitleContainer {
   position: relative;
-  width:300px;
-  margin:auto;
+  width: 300px;
+  margin: auto;
 }
 
-.portfolioTitle, .portfolioProjText {
-  font-family: 'Montserrat', sans-serif;
+.portfolioTitle,
+.portfolioProjText {
+  font-family: "Montserrat", sans-serif;
   letter-spacing: -2px;
   font-size: 34px;
   font-weight: 700;
@@ -218,7 +221,7 @@ p {
 
 .portfolioTitle:before {
   content: "";
-  background: #70C9BE;
+  background: #70c9be;
   position: absolute;
   right: 60px;
   top: 15px;
@@ -231,7 +234,8 @@ p {
   font-weight: bold;
 }
 
-.portfolioInstructions, .portfolioProjDescription {
+.portfolioInstructions,
+.portfolioProjDescription {
   font-size: 16px;
   font-weight: normal;
   text-align: center;
@@ -250,7 +254,6 @@ p {
 
 .projectImage {
   width: 300px;
-  /* border: 2px solid #818282; */
   box-shadow: 2px 2px 6px 0 #818282;
   z-index: 2;
   object-fit: cover;
@@ -261,7 +264,7 @@ p {
 }
 
 .projectImageContainer:hover > img {
-  filter: brightness(35%);
+  filter: brightness(25%);
 }
 
 .projectImageContainer {
@@ -270,7 +273,7 @@ p {
 
 .projectImageContainer:hover::after {
   content: "More Info";
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   color: white;
   z-index: 1;
@@ -284,7 +287,7 @@ p {
 }
 
 .projectTitle {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: bold;
   margin: 20px 0 3px;
@@ -292,7 +295,7 @@ p {
 }
 
 .projectLinks {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: 700;
   margin: auto 5px;
@@ -309,7 +312,7 @@ p {
   margin: 18px 4px 0;
 }
 
-.projectLanguages { 
+.projectLanguages {
   font-size: 13px;
   font-weight: 400;
   margin: 0 0 14px;
@@ -318,16 +321,18 @@ p {
 }
 
 .projectDescription {
-font-size: 13px;
-font-weight: 400;
-margin: 0 5% 14px;
+  font-size: 13px;
+  font-weight: 400;
+  margin: 0 5% 14px;
 }
 
 .descriptionText {
   background-color: #eeeff0;
 }
 
-.fake800, .fake980, .fake1200 {
+.fake800,
+.fake980,
+.fake1200 {
   display: none;
 }
 
@@ -344,7 +349,7 @@ margin: 0 5% 14px;
 
 .portfolioProjText:before {
   content: "";
-  background: #70C9BE;
+  background: #70c9be;
   position: absolute;
   right: 40px;
   top: 15px;
@@ -357,7 +362,6 @@ margin: 0 5% 14px;
   margin-bottom: 30px;
 }
 
-
 .portfolioDemo {
   margin-bottom: 70px;
 }
@@ -366,7 +370,8 @@ margin: 0 5% 14px;
   font-weight: 700;
 }
 
-.formList, .inputList {
+.formList,
+.inputList {
   list-style-type: none;
 }
 
@@ -377,11 +382,11 @@ margin: 0 5% 14px;
 #submitButton {
   display: block;
   margin: 20px auto 0;
-  background-color: #70C9BE;
+  background-color: #70c9be;
   border: 1px solid black;
   border-radius: 5px;
   color: black;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 700;
   padding: 8px 10px;
@@ -395,7 +400,7 @@ margin: 0 5% 14px;
 }
 
 .formLegend {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   text-align: center;
   font-weight: 700;
@@ -405,7 +410,7 @@ margin: 0 5% 14px;
 
 fieldset {
   background-image: url("./images/backgrounds/background.svg");
-  background-color: #EDEDED;
+  background-color: #ededed;
   background-size: 250px auto;
   border: 2px solid #818282;
 }
@@ -422,12 +427,11 @@ fieldset {
   width: 230px;
 }
 
-
 .footerContainer {
   border-top: 2px solid #818282;
   height: 150px;
   background-image: url("./images/backgrounds/background.svg");
-  background-color: #EDEDED;
+  background-color: #ededed;
   background-size: 250px auto;
 }
 
@@ -435,12 +439,13 @@ fieldset {
   width: 50px;
 }
 
-.mailToLink, .githubLink, .linkedinLink {
+.mailToLink,
+.githubLink,
+.linkedinLink {
   width: 18%;
   display: inline-block;
   text-align: center;
 }
-
 
 .socialLogoContainer {
   padding-top: 30px;
@@ -448,15 +453,13 @@ fieldset {
   text-align: center;
 }
 
-
 .copyright {
   text-align: center;
   margin-top: 35px;
 }
 
-
 #scrollTop {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 900;
   display: none;
   position: fixed;
@@ -470,8 +473,15 @@ fieldset {
   color: white;
   cursor: pointer;
   padding: 12px 15px 12px;
-  opacity: .6;
+  opacity: 0.6;
   line-height: 30px;
+}
+
+@media only screen and (min-width: 360px) {
+.helloContainer {
+  right: 10%;
+  left: auto;
+  top: 200px;
 }
 
 
@@ -479,7 +489,7 @@ fieldset {
   .joshImage {
     width: 55%;
   }
-  
+
   .project {
     padding-bottom: 2%;
   }
@@ -488,15 +498,9 @@ fieldset {
     font-size: 60px;
     margin-top: 50%;
   }
-  .titleTextContainer {
-  right: 10%;
-  left: auto;
-  }
 
-  .titleTextContainer:before {
-    left: .7rem;
-    bottom: 3.6rem;
-    height: 2.2rem;
+  .helloContainer {
+    top: 250px;
   }
 
   .portfolioTitle {
@@ -522,42 +526,48 @@ fieldset {
     font-size: 18px;
   }
 
-  .projectDescription, .projectLanguages {
-  margin: 0 15% 16px;
-  font-size: 16px;
+  .projectDescription,
+  .projectLanguages {
+    margin: 0 15% 16px;
+    font-size: 16px;
   }
 
   .portfolioProj {
-  margin: 0 10% 0;
+    margin: 0 10% 0;
   }
 
   .portfolioProjText {
-  font-size: 45px;
+    font-size: 45px;
   }
 
-
   .portfolioProjText:before {
-  right: 0;
-  top: .4em;
-  width: 2.8em;
-  height: .7em;
+    right: 0;
+    top: 0.4em;
+    width: 2.8em;
+    height: 0.7em;
   }
 
   .demoProjectImage {
     height: 63.4vw;
   }
+}
 
+@media only screen and (min-width: 480px) {
+  .titleText {
+    font-size: 80px;
+    letter-spacing: -3px;
+  }
+
+  .bioText {
+    font-size: 18px;
+    margin: 35px 0 45px;
+  }
 }
 
 @media only screen and (min-width: 620px) {
   .titleText {
     font-size: 100px;
     letter-spacing: -3px;
-  }
-  .titleTextContainer:before {
-    left: 1.2rem;
-    bottom: 5.8rem;
-    height: 3.8rem;
   }
 
   .projectGeneratorList {
@@ -567,7 +577,6 @@ fieldset {
   .inputText {
     width: 300px;
   }
-
 }
 
 @media only screen and (min-width: 800px) {
@@ -575,11 +584,15 @@ fieldset {
     font-size: 33px;
   }
 
+  .helloImage {
+    width: 35vw;
+  }
+
   .gearIcon {
     width: 25px;
     margin-left: 30px;
   }
-  
+
   .projectsContainer {
     display: flex;
     flex-wrap: wrap;
@@ -591,93 +604,61 @@ fieldset {
     margin: 50px auto 0;
     padding-bottom: initial;
   }
+
   .projectImage {
-  width: 100%;
+    width: 100%;
   }
 
   .projectDescription {
     margin: 0 0 14px;
   }
 
-  .titleTextContainer{
-  top: 200px;
-  left: 58%;
-  right: auto;
+  .helloContainer {
+    position: static;
+    margin-bottom: 20px;
   }
 
   .joshImage {
     width: 400px;
-    margin: 110px 0 0 50px;
-    height: 470px;
-  }
-
-.bioText {
-  margin-top: auto;
-  z-index: 2;
-  margin-bottom: 0;
-}
-
-.hero {
-  display: flex;
-  padding-bottom: 50px;
-}
-
-.portfolioDemo {
-  width: 625px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.fake980, .fake1200 {
-  display: none;
-}
-
-.fake800 {
-  display: initial;
-}
-
-.demoProjectImage {
-  height: 34.3vw;
-  object-fit: cover;
-  width: 100%;
-}
-
-@media only screen and (min-width: 980px) {
-  .project {
-    width: 30%;
-  }
-
-  .titleText {
-    font-size: 140px;
-    letter-spacing: -7px;
-  }
-
-  .titleTextContainer{
-    top: -30px;
-    left: 500px;
-    right: auto;
-  }
-
-  .titleTextContainer:before {
-    left: 1.7rem;
-    bottom: 8.4rem;
-    height: 5rem;
-  }
-
-  .navMenuMobile {
-    display: none;
   }
 
   .bioText {
-  margin-left: 60px;
+    z-index: 2;
+    font-size: 16px;
+    margin: 0;
   }
 
-  .hamburger, .cross {
+  .hero {
+    display: flex;
+    padding-bottom: 50px;
+  }
+
+  .portfolioDemo {
+    width: 625px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .fake980,
+  .fake1200 {
     display: none;
   }
 
-  .navDesktop {
+  .fake800 {
     display: initial;
+  }
+
+  .demoProjectImage {
+    height: 34.3vw;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .bioContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
   }
 
   .expandBio {
@@ -691,12 +672,52 @@ fieldset {
   .expandedBio {
     display: initial;
   }
+}
+
+@media only screen and (min-width: 980px) {
+  .project {
+    width: 30%;
+  }
+
+  .joshImage {
+    margin: 110px 0 0 43px;
+  }
+
+  .titleText {
+    font-size: 140px;
+    letter-spacing: -7px;
+  }
+
+  .helloContainer {
+    top: -30px;
+    left: 500px;
+    right: auto;
+  }
+
+  .bioContainer {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .navMenuMobile {
+    display: none;
+  }
+
+  .hamburger,
+  .cross {
+    display: none;
+  }
+
+  .navDesktop {
+    display: initial;
+  }
 
   .portfolioProjDescription {
     width: 780px;
   }
 
-  .fake800, .fake1200 {
+  .fake800,
+  .fake1200 {
     display: none;
   }
 
@@ -706,6 +727,10 @@ fieldset {
 
   .demoProjectImage {
     height: 23.2vw;
+  }
+
+  .helloImage {
+    width: 380px;
   }
 }
 
@@ -723,7 +748,8 @@ fieldset {
     font-size: 18px;
   }
 
-  .fake800, .fake980 {
+  .fake800,
+  .fake980 {
     display: none;
   }
 
@@ -740,6 +766,6 @@ fieldset {
   .bioText {
     width: 800px;
     font-size: 20px;
-
   }
 }
+

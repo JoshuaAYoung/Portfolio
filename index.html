@@ -3,7 +3,7 @@
   <head>
     <meta
       name="description"
-      content="I'm Josh, a software engineer of the full-stack variety. In addition to HTML, CSS, JavaScript, React, Express, and PostgreSQL I bring a lot of relevant skills to the table from my previous career as a licensed architect. Rigorous problem solving. Intuitive design. Precision. A passion for learning, every... single... day."
+      content="I'm Josh, a software engineer of the full-stack variety. In addition to HTML5, CSS3, JavaScript, jQuery, React, Express, and PostgreSQL I bring a lot of relevant skills to the table from my previous career as a licensed architect. Rigorous problem solving. Intuitive design. Precision. A passion for learning, every... single... day."
     />
     <meta
       name="keywords"
@@ -17,7 +17,7 @@
     <meta name="twitter:title" content="Josh Young - Portfolio" />
     <meta
       name="twitter:description"
-      content="I'm Josh, a software engineer of the full-stack variety. In addition to HTML, CSS, JavaScript, React, Express, and PostgreSQL I bring a lot of relevant skills to the table from my previous career as a licensed architect. Rigorous problem solving. Intuitive design. Precision. A passion for learning, every... single... day."
+      content="I'm Josh, a software engineer of the full-stack variety. In addition to HTML5, CSS3, JavaScript, jQuery, React, Express, and PostgreSQL, I bring a lot of relevant skills to the table from my previous career as a licensed architect. Rigorous problem solving. Intuitive design. Precision. A passion for learning, every... single... day."
     />
     <meta name="twitter:image" content="https://joshyoung.net/preview.jpg" />
 
@@ -39,10 +39,10 @@
     <meta property="og:image:height" content="731" />
     <meta
       property="og:description"
-      content="I'm Josh, a software engineer of the full-stack variety. In addition to HTML, CSS, JavaScript, React, Express, and PostgreSQL I bring a lot of relevant skills to the table from my previous career as a licensed architect. Rigorous problem solving. Intuitive design. Precision. A passion for learning, every... single... day."
+      content="I'm Josh, a software engineer of the full-stack variety. In addition to HTML5, CSS3, JavaScript, jQuery, React, Express, and PostgreSQL I bring a lot of relevant skills to the table from my previous career as a licensed architect. Rigorous problem solving. Intuitive design. Precision. A passion for learning, every... single... day."
     />
     <meta property="og:site_name" content="Josh Young - Portfolio" />
-    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link rel="apple-touch-icon" href="http://joshyoung.net/logo192.png" />
     <title>Josh Young - Portfolio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -52,8 +52,18 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="http://joshyoung.net/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="http://joshyoung.net/favicon-16x16.png"
+      sizes="16x16"
+    />
   </head>
 
   <body>
@@ -104,15 +114,23 @@
       <nav class="navDesktop">
         <div class="navMenuDesktop">
           <a href="index.html" class="menuDesktop">Home</a>
-          <span class="projectBullet"
-            ><img src="./images/gearlogo.svg" alt="gear logo" class="menuBreak"
-          /></span>
+          <span class="projectBullet">
+            <img
+              src="./images/gearlogo.svg"
+              alt="gear logo"
+              class="menuBreak"
+            />
+          </span>
           <a href="mailto:joshua@young.net" class="menuDesktop" target="_blank"
             >Email</a
           >
-          <span class="projectBullet"
-            ><img src="./images/gearlogo.svg" alt="gear logo" class="menuBreak"
-          /></span>
+          <span class="projectBullet">
+            <img
+              src="./images/gearlogo.svg"
+              alt="gear logo"
+              class="menuBreak"
+            />
+          </span>
           <a
             href="https://github.com/JoshuaAYoung"
             target="_blank"
@@ -145,34 +163,40 @@
           alt="Josh Young's profile picture"
           class="joshImage"
         />
-        <div class="titleTextContainer">
-          <h2 class="titleText">Hello.</h2>
+        <div class="bioContainer">
+          <div class="helloContainer">
+            <img
+              src="./images/hello.svg"
+              class="helloImage"
+              alt="hello title"
+            />
+          </div>
+          <p class="bioText" id="bioText" aria-live="polite">
+            I'm Josh, a software engineer of the full-stack variety. In addition
+            to
+            <span class="boldBioText"
+              >HTML5, CSS3, JavaScript, jQuery, React, Express, and PostgreSQL,
+            </span>
+            I bring a lot of relevant skills to the table from my previous
+            career as a licensed<span class="expandedBio hidden">
+              architect. Rigorous problem solving. Intuitive design. Precision.
+              A passion for learning, every... single... day. <br /><br />
+              When I'm not coding, you’ll usually find me hacking life. I’m such
+              a passionate problem solver, that I have filled my life with
+              projects. From building my own 3d printer to making furniture.
+              House remodeling. I’m even building my own teardrop trailer.
+              <br /><br />
+              When I'm not obsessing over a project at work or at home, you'll
+              likely find me on an adventure with tiny humans (the progeny) or
+              immersed in a game.
+              <span class="collapseBio" aria-controls="bioText">
+                &lt; Collapse</span
+              ></span
+            ><span class="expandBio" aria-controls="bioText"
+              >... Read More &gt;</span
+            >
+          </p>
         </div>
-        <p class="bioText" id="bioText" aria-live="polite">
-          I'm Josh, a software engineer of the full-stack variety. In addition
-          to
-          <span class="boldBioText"
-            >HTML, CSS, JavaScript, jQuery, React, Express, and PostgreSQL</span
-          >
-          I bring a lot of relevant skills to the table from my previous career
-          as a licensed<span class="expandedBio hidden">
-            architect. Rigorous problem solving. Intuitive design. Precision. A
-            passion for learning, every... single... day. <br /><br />
-            When I'm not coding, you’ll usually find me hacking life. I’m such a
-            passionate problem solver, that I have filled my life with projects.
-            From building my own 3d printer to making furniture. House
-            remodeling. I’m even building my own teardrop trailer.
-            <br /><br />
-            When I'm not obsessing over a project at work or at home, you'll
-            likely find me on an adventure with tiny humans (the progeny) or
-            immersed in a game.
-            <span class="collapseBio" aria-controls="bioText">
-              &lt; Collapse</span
-            ></span
-          ><span class="expandBio" aria-controls="bioText"
-            >... Read More &gt;</span
-          >
-        </p>
       </section>
       <div class="portfolioContainer" aria-live="polite">
         <div class="portTitleContainer">
