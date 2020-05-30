@@ -16,7 +16,7 @@ const PROJECTS = [
     title: "npmm",
     image: "./images/npmmscreenshot.jpg",
     imageAlt: "npmm Website Screenshot",
-    languages: "PostgreSQL | Express | React | Node",
+    languages: "PostgreSQL | Express | React | Node | Redux",
     description:
       "Node Package Manager Manager (npmm) is an app designed to help users keep track of their favorite npm packages. With the addition of the Node CLI package, npmm allows a user to seamlessly integrate their collections into their project’s workflow. This project was built in three weeks by a team of five (including myself). The design and CSS were scratch built.",
     code: "https://github.com/JoshuaAYoung/npmm-client",
@@ -42,7 +42,7 @@ const PROJECTS = [
     imageAlt: "Josh's Portfolio Website Screenshot",
     languages: "jQuery | JavaScript | HTML | CSS",
     description:
-      "Well, this is kind of meta... Afterall, though, this website is a project in and of itself. Built in two weeks for a very demanding client, this portfolio app showcases other web development projects. Features scratch built design and CSS.",
+      "Well, this is kind of meta... Afterall, though, this website is a project in and of itself. Built in two weeks for a very discerning client, this portfolio app showcases web development projects. The site features scratch built design and CSS.",
     code: "https://github.com/JoshuaAYoung/PUBCrawlHub",
     demo: "https://joshyoung.net",
     class: "projectImage",
