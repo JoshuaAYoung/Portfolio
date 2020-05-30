@@ -18,7 +18,7 @@ const PROJECTS = [
     imageAlt: "npmm Website Screenshot",
     languages: "PostgreSQL | Express | React | Node | Redux",
     description:
-      "Node Package Manager Manager (npmm) is an app designed to help developers keep track of their favorite npm (node.js) packages. Npmm also includes a companion command line tool that allows developers to add a collection of packages to a project they're working on, or save packages from an existing project to a new collection.",
+      "Node Package Manager Manager (npmm) is an app designed to help developers keep track of their favorite npm (node.js) packages. Npmm also includes a companion command line tool that syncs with the npmm database. It allows users to add a collection of packages to a project they're working on, or save packages from an existing package.json file to a new collection.",
     code: "https://github.com/JoshuaAYoung/npmm-client",
     demo: "https://npmm.dev",
     class: "projectImage",
