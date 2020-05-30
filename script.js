@@ -6,7 +6,7 @@ const PROJECTS = [
     imageAlt: "v-able Website Screenshot",
     languages: "PostgreSQL | Express | React | Node",
     description:
-      "v•able is a platform for connecting experienced volunteers to non-profit organizations that have a specific need for skilled labor or professional services and are having a hard time finding them on the open market. This project was built in three weeks and includes scratch built design and css. Also features JSON web tokens and bCrypt for authentication and authorization.",
+      "v•able is a platform for connecting experienced volunteers to non-profit organizations. A lot of non-profits have a specific need for skilled labor or professional services and have a hard time finding volunteers on the open market. The backbone of the v•able app is the Opportunity Board - a job board that's specifically catered to skilled volunteers.",
     code: "https://github.com/JoshuaAYoung/v-able-client",
     demo: "https://vable.dev",
     class: "projectImage",
@@ -18,7 +18,7 @@ const PROJECTS = [
     imageAlt: "npmm Website Screenshot",
     languages: "PostgreSQL | Express | React | Node | Redux",
     description:
-      "Node Package Manager Manager (npmm) is an app designed to help users keep track of their favorite npm packages. With the addition of the Node CLI package, npmm allows a user to seamlessly integrate their collections into their project’s workflow. This project was built in three weeks by a team of five (including myself). The design and CSS were scratch built.",
+      "Node Package Manager Manager (npmm) is an app designed to help developers keep track of their favorite npm (node.js) packages. Npmm also includes a companion command line tool that allows developers to add a collection of packages to a project they're working on, or save packages from an existing project to a new collection.",
     code: "https://github.com/JoshuaAYoung/npmm-client",
     demo: "https://npmm.dev",
     class: "projectImage",
@@ -30,7 +30,7 @@ const PROJECTS = [
     imageAlt: "Pub Crawl Hub Website Screenshot",
     languages: "jQuery | JavaScript | HTML | CSS",
     description:
-      "PUBcrawlHUB is an app designed to help users plan a bar crawl and map their path from one destination to the next. It takes a location as input and makes fetch requests to the OpenBrewery api to find bars in the user's area. It then takes the latitude and longitude of each bar and queries the MapBox api to populate the map plugin with the location of each bar with the ability to get directions between them. The design and CSS were scratch built.",
+      "PUBcrawlHUB makes it easy to plan out a bar crawl and get directions from one location to the next. Enter the desired location, and PUBcrawlHUB shows you a list of bars in the area. Sort the bars in the order you want to visit them, remove the ones you don't want and you're ready to hit the town.",
     code: "https://github.com/JoshuaAYoung/PUBCrawlHub",
     demo: "https://pubcrawlhub.dev",
     class: "projectImage",
@@ -42,7 +42,7 @@ const PROJECTS = [
     imageAlt: "Josh's Portfolio Website Screenshot",
     languages: "jQuery | JavaScript | HTML | CSS",
     description:
-      "Well, this is kind of meta... Afterall, though, this website is a project in and of itself. Built in two weeks for a very discerning client, this portfolio app showcases web development projects. The site features scratch built design and CSS.",
+      "I know, this is Meta, right? Afterall, though, this website is a project in and of itself. Built in two weeks for a very discerning client, this portfolio app showcases web development projects. The site features scratch built design and CSS.",
     code: "https://github.com/JoshuaAYoung/PUBCrawlHub",
     demo: "https://joshyoung.net",
     class: "projectImage",
@@ -54,7 +54,7 @@ const PROJECTS = [
     imageAlt: "Harry Potter Quiz App Screenshot",
     languages: "jQuery | JavaScript | HTML | CSS",
     description:
-      "This quiz app uses a view that's refreshed using jQuery event handlers to replace content on the page. A json-like object handles the data and keeps track of the user's progress. Design and CSS were scratch built.",
+      "Harry Potter and the Quiz of Ages is the ultimate Harry Potter quiz app. It keeps track of your progress and your score. When you're finished, the app reveals your rank, from Muggle to Auror, respectively.",
     code: "https://github.com/JoshuaAYoung/QuizApp",
     demo: "https://joshyoung.net/hpquizofages/",
     class: "projectImage",
