@@ -42,7 +42,7 @@ p {
 
 .logoImage {
   width: 30px;
-  margin-left: 15px;
+  margin-left: 18px;
 }
 
 .name {
@@ -52,9 +52,8 @@ p {
   margin: auto;
   display: inline-block;
   letter-spacing: -1px;
-  margin: 18px 0 0 -1px;
+  margin: 18px 0 0 7px;
   vertical-align: 8px;
-  margin-left: 9px;
 }
 
 .navMenuMobile {
@@ -114,6 +113,7 @@ p {
   width: 100px;
   height: 17px;
   z-index: -1;
+  box-shadow: 2px 2px 6px 0 #818282;
 }
 
 .hamburger {
@@ -228,6 +228,7 @@ p {
   width: 140px;
   height: 20px;
   z-index: -1;
+  box-shadow: 2px 2px 6px 0 #818282;
 }
 
 .click {
@@ -337,6 +338,7 @@ p {
   width: 90px;
   height: 20px;
   z-index: -1;
+  box-shadow: 2px 2px 6px 0 #818282;
 }
 
 .portfolioProjDescription {
@@ -420,18 +422,11 @@ fieldset {
   width: 50px;
 }
 
-.mailToLink,
-.githubLink,
-.linkedinLink {
-  width: 18%;
-  display: inline-block;
-  text-align: center;
-}
-
 .socialLogoContainer {
   padding-top: 30px;
   width: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .copyright {
@@ -490,6 +485,10 @@ fieldset {
     width: 55%;
   }
 
+  .logoImage {
+    margin-left: 30px;
+  }
+
   .project {
     padding-bottom: 2%;
   }
@@ -497,10 +496,6 @@ fieldset {
   .titleText {
     font-size: 60px;
     margin-top: 50%;
-  }
-
-  .helloContainer {
-    top: 250px;
   }
 
   .portfolioTitle {
@@ -515,11 +510,11 @@ fieldset {
   }
 
   .project {
-    width: 100%;
+    width: 80%;
   }
 
   .projectImage {
-    width: 80%;
+    width: 100%;
   }
 
   .projectTitle {
@@ -528,7 +523,7 @@ fieldset {
 
   .projectDescription,
   .projectLanguages {
-    margin: 0 15% 16px;
+    margin: 0 38px 16px;
     font-size: 16px;
   }
 
@@ -558,6 +553,10 @@ fieldset {
     letter-spacing: -3px;
   }
 
+  .logoImage {
+    width: 34px;
+  }
+
   .bioText {
     font-size: 18px;
     margin: 35px 0 45px;
@@ -565,13 +564,7 @@ fieldset {
 
   .name {
     font-size: 30px;
-    vertical-align: 9px;
     margin-top: 16px;
-  }
-
-  .logoImage {
-    width: 34px;
-    margin-left: 30px;
   }
 }
 
@@ -587,6 +580,10 @@ fieldset {
 
   .inputText {
     width: 300px;
+  }
+
+  .helloContainer {
+    top: 40vw;
   }
 }
 
@@ -617,11 +614,12 @@ fieldset {
 
   .helloContainer {
     position: static;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
 
   .joshImage {
     width: 400px;
+    height: auto;
   }
 
   .bioText {
@@ -681,6 +679,10 @@ fieldset {
     width: 30%;
   }
 
+  .logoImage {
+    margin-left: 43px;
+  }
+
   .joshImage {
     margin: 110px 0 0 43px;
   }
@@ -688,12 +690,6 @@ fieldset {
   .titleText {
     font-size: 140px;
     letter-spacing: -7px;
-  }
-
-  .helloContainer {
-    top: -30px;
-    left: 500px;
-    right: auto;
   }
 
   .bioContainer {
