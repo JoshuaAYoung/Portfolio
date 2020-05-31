@@ -43,7 +43,7 @@ const PROJECTS = [
     languages: "jQuery | JavaScript | HTML | CSS",
     description:
       "I know, pretty meta, right? Afterall, though, this website is a project in and of itself. Built in two weeks for a very discerning client, this portfolio app showcases web development projects. The site features scratch built design and CSS.",
-    code: "https://github.com/JoshuaAYoung/PUBCrawlHub",
+    code: "https://github.com/JoshuaAYoung/Portfolio",
     demo: "https://joshyoung.net",
     class: "projectImage",
   },
