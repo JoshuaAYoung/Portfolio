@@ -263,27 +263,8 @@ p {
   height: 243.66px;
 }
 
-.projectImageContainer:hover > img {
-  filter: brightness(25%);
-}
-
 .projectImageContainer {
   position: relative;
-}
-
-.projectImageContainer:hover::after {
-  content: "More Info";
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  color: white;
-  z-index: 1;
-  font-weight: 700;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  cursor: pointer;
-  margin-left: -46px;
-  margin-top: -10px;
 }
 
 .projectTitle {
@@ -475,6 +456,27 @@ fieldset {
   padding: 12px 15px 12px;
   opacity: 0.6;
   line-height: 30px;
+}
+
+@media (hover: hover) {
+  .projectImageContainer:hover > img {
+    filter: brightness(25%);
+  }
+
+  .projectImageContainer:hover::after {
+    content: "More Info";
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: white;
+    z-index: 1;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    cursor: pointer;
+    margin-left: -46px;
+    margin-top: -10px;
+  }
 }
 
 @media only screen and (min-width: 360px) {
