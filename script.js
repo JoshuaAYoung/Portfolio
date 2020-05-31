@@ -2,7 +2,7 @@ const PROJECTS = [
   //1
   {
     title: "v • able",
-    image: "./images/vablescreenshot.jpg",
+    image: "./images/vablescreenshot.png",
     imageAlt: "v-able Website Screenshot",
     languages: "PostgreSQL | Express | React | Node",
     description:
@@ -14,7 +14,7 @@ const PROJECTS = [
   //2
   {
     title: "npmm",
-    image: "./images/npmmscreenshot.jpg",
+    image: "./images/npmmscreenshot.png",
     imageAlt: "npmm Website Screenshot",
     languages: "PostgreSQL | Express | React | Node | Redux",
     description:
@@ -26,7 +26,7 @@ const PROJECTS = [
   //3
   {
     title: "PUBcrawlHUB",
-    image: "./images/pchscreenshot.jpg",
+    image: "./images/pchscreenshot.png",
     imageAlt: "Pub Crawl Hub Website Screenshot",
     languages: "jQuery | JavaScript | HTML | CSS",
     description:
@@ -38,7 +38,7 @@ const PROJECTS = [
   //4
   {
     title: "Portfolio",
-    image: "./images/portscreenshot.jpg",
+    image: "./images/portscreenshot.png",
     imageAlt: "Josh's Portfolio Website Screenshot",
     languages: "jQuery | JavaScript | HTML | CSS",
     description:
@@ -50,7 +50,7 @@ const PROJECTS = [
   //5
   {
     title: "Harry Potter and the Quiz of Ages",
-    image: "./images/hpscreenshot.jpg",
+    image: "./images/hpscreenshot.png",
     imageAlt: "Harry Potter Quiz App Screenshot",
     languages: "jQuery | JavaScript | HTML | CSS",
     description:
