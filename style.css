@@ -458,7 +458,7 @@ fieldset {
   line-height: 30px;
 }
 
-@media (hover: hover) {
+@media not all and (pointer: coarse) {
   .projectImageContainer:hover > img {
     filter: brightness(25%);
   }
