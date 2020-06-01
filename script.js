@@ -227,28 +227,28 @@ function pushProjects() {
   $(".projectsContainer").prepend(generateProjectHtml());
 }
 
-function handleDescription() {
-  $(".projectDescription").hide();
-  $(".project").click(function (event) {
-    if (!$(this).find(".projectDescription").hasClass("shown")) {
-      event.stopPropagation();
-      event.preventDefault();
-      $(this).find(".projectLanguages").hide();
-      $(this).find(".projectDescription").slideDown("slow", "swing");
-      $(this).find(".projectDescription").addClass("shown");
-    } else {
-      $(this).find(".projectDescription").slideUp("slow", "swing");
-      $(this).find(".projectLanguages").show();
-    }
-  });
-  $(document).click(function () {
-    if ($(".projectDescription").hasClass("shown")) {
-      $(".projectDescription").slideUp("slow", "swing");
-      $(".projectLanguages").show();
-      $(".projectDescription").removeClass("shown");
-    }
-  });
-}
+// function handleDescription() {
+//   $(".projectDescription").hide();
+//   $(".project").click(function (event) {
+//     if (!$(this).find(".projectDescription").hasClass("shown")) {
+//       event.stopPropagation();
+//       event.preventDefault();
+//       $(this).find(".projectLanguages").hide();
+//       $(this).find(".projectDescription").slideDown("slow", "swing");
+//       $(this).find(".projectDescription").addClass("shown");
+//     } else {
+//       $(this).find(".projectDescription").slideUp("slow", "swing");
+//       $(this).find(".projectLanguages").show();
+//     }
+//   });
+//   $(document).click(function () {
+//     if ($(".projectDescription").hasClass("shown")) {
+//       $(".projectDescription").slideUp("slow", "swing");
+//       $(".projectLanguages").show();
+//       $(".projectDescription").removeClass("shown");
+//     }
+//   });
+// }
 
 function handleBio() {
   $(".bioText").click(function () {

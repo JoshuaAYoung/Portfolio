@@ -452,7 +452,7 @@ fieldset {
   opacity: 0.6;
   line-height: 30px;
 }
-
+/* 
 @media not all and (pointer: coarse) {
   .projectImageContainer:hover > img {
     filter: brightness(25%);
@@ -472,7 +472,7 @@ fieldset {
     margin-left: -46px;
     margin-top: -10px;
   }
-}
+} */
 
 @media only screen and (min-width: 360px) {
   .helloImage {
