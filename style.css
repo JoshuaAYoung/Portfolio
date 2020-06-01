@@ -87,6 +87,15 @@ p {
   text-decoration: none;
   letter-spacing: -1px;
   color: rgb(0, 0, 0);
+  position: relative;
+}
+
+.menuDesktop:before {
+  content: "";
+  transition: all 0.1s ease-out 0.1s;
+  -webkit-transition: all 0.1s ease-out 0.1s;
+  -moz-transition: all 0.1s ease-out 0.1s;
+  -o-transition: all 0.1s ease-out 0.1s;
 }
 
 .navMenuDesktop {
@@ -102,14 +111,23 @@ p {
   letter-spacing: -1px;
   color: rgb(0, 0, 0);
   text-decoration: none;
+  position: relative;
+}
+
+.menuItem:before {
+  content: "";
+  transition: all 0.1s ease-out 0.1s;
+  -webkit-transition: all 0.1s ease-out 0.1s;
+  -moz-transition: all 0.1s ease-out 0.1s;
+  -o-transition: all 0.1s ease-out 0.1s;
 }
 
 .home:before {
   content: "";
   background: #70c9be;
   position: absolute;
-  right: 32px;
-  top: 103px;
+  right: -8px;
+  top: 16px;
   width: 100px;
   height: 17px;
   z-index: -1;
@@ -223,9 +241,9 @@ p {
   content: "";
   background: #70c9be;
   position: absolute;
-  right: 60px;
+  right: 67px;
   top: 15px;
-  width: 140px;
+  width: 148px;
   height: 20px;
   z-index: -1;
   box-shadow: 2px 2px 6px 0 #818282;
@@ -280,13 +298,24 @@ p {
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: 700;
-  margin: auto 5px;
+  margin: auto 8px;
   text-decoration: underline;
+  position: relative;
+  z-index: 2;
+}
+
+.projectLinks:before {
+  content: "";
+  transition: all 0.1s ease-out 0.1s;
+  -webkit-transition: all 0.1s ease-out 0.1s;
+  -moz-transition: all 0.1s ease-out 0.1s;
+  -o-transition: all 0.1s ease-out 0.1s;
 }
 
 .logoBreak {
   width: 15px;
   margin: 20px 4px 0;
+  vertical-align: -1px;
 }
 
 .menuBreak {
@@ -374,6 +403,16 @@ p {
   font-weight: 700;
   padding: 8px 10px;
   cursor: pointer;
+  transition: all 0.1s ease-out 0.1s;
+  -webkit-transition: all 0.1s ease-out 0.1s;
+  -moz-transition: all 0.1s ease-out 0.1s;
+  -o-transition: all 0.1s ease-out 0.1s;
+}
+
+#submitButton:hover {
+  background-color: black;
+  color: white;
+  padding: 8px 15px;
 }
 
 .portfolioLink {
@@ -420,6 +459,10 @@ fieldset {
 
 .socialLogo {
   width: 50px;
+  transition: all 0.1s ease-out 0.1s;
+  -webkit-transition: all 0.1s ease-out 0.1s;
+  -moz-transition: all 0.1s ease-out 0.1s;
+  -o-transition: all 0.1s ease-out 0.1s;
 }
 
 .socialLogoContainer {
@@ -451,10 +494,14 @@ fieldset {
   padding: 12px 15px 12px;
   opacity: 0.6;
   line-height: 30px;
+  transition: all 0.1s ease-out 0.1s;
+  -webkit-transition: all 0.1s ease-out 0.1s;
+  -moz-transition: all 0.1s ease-out 0.1s;
+  -o-transition: all 0.1s ease-out 0.1s;
 }
-/* 
+
 @media not all and (pointer: coarse) {
-  .projectImageContainer:hover > img {
+  /* .projectImageContainer:hover > img {
     filter: brightness(25%);
   }
 
@@ -471,8 +518,52 @@ fieldset {
     cursor: pointer;
     margin-left: -46px;
     margin-top: -10px;
+  } */
+
+  .socialLogo:hover {
+    transform: scale(1.1);
   }
-} */
+
+  #scrollTop:hover {
+    opacity: 1;
+  }
+
+  .menuHover:hover::before {
+    content: "";
+    background: #70c9be;
+    position: absolute;
+    right: -8px;
+    top: 15px;
+    width: 100%;
+    height: 18px;
+    z-index: -1;
+    box-shadow: 2px 2px 6px 0 #818282;
+  }
+
+  .menuDesktop:hover::before {
+    content: "";
+    background: #70c9be;
+    position: absolute;
+    right: -5px;
+    top: 8px;
+    width: 100%;
+    height: 12px;
+    z-index: -1;
+    box-shadow: 2px 2px 6px 0 #818282;
+  }
+
+  .projectLinks:hover::before {
+    content: "";
+    background: #70c9be;
+    position: absolute;
+    right: 0px;
+    top: 10px;
+    width: 100%;
+    height: 13px;
+    z-index: -1;
+    box-shadow: 2px 2px 6px 0 #818282;
+  }
+}
 
 @media only screen and (min-width: 360px) {
   .helloImage {
@@ -505,7 +596,7 @@ fieldset {
   .portfolioTitle:before {
     right: 28px;
     top: 23px;
-    width: 205px;
+    width: 222px;
     height: 30px;
   }
 
