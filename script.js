@@ -270,19 +270,10 @@ function handleBio() {
 }
 
 function handleHamburger() {
-  $(".cross").hide();
   $(".navMenuMobile").hide();
-  $(".hamburger").click(function () {
-    $(".navMenuMobile").slideToggle("slow", function () {
-      $(".hamburger").hide();
-      $(".cross").show();
-    });
-  });
-  $(".cross").click(function () {
-    $(".navMenuMobile").slideToggle("slow", function () {
-      $(".cross").hide();
-      $(".hamburger").show();
-    });
+  $(".burgerButton").click(function () {
+    $(".burgerButton").toggleClass("burgerOpen");
+    $(".navMenuMobile").slideToggle("slow");
   });
 }
 

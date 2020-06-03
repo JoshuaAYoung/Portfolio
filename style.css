@@ -19,18 +19,113 @@ p {
 
 .expandBio,
 .collapseBio,
-.hamburger,
+.burgerButton,
 .cross {
   cursor: pointer;
 }
 
 /* .expandBio,
 .collapseBio,
-.hamburger,
 .cross,
+.burgerButton,
 .projectImage {
   cursor: pointer;
 } */
+
+.burgerButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 78px;
+  height: 67px;
+  background: transparent;
+  border: none;
+  padding: 0px 25px 25px;
+  outline: none;
+}
+
+.burgerContainer {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.burgerContainer span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: black;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+.burgerContainer:focus span {
+  box-shadow: 0.5px 0.5px 0 #2c2c2c;
+}
+
+.burgerContainer:hover span {
+  box-shadow: 0.5px 0.5px 0 #2c2c2c;
+}
+
+.burgerContainer span:nth-child(1) {
+  top: 0;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.burgerContainer span:nth-child(2) {
+  top: 10px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.burgerContainer span:nth-child(3) {
+  top: 20px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+
+.burgerOpen span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 0;
+}
+
+.burgerOpen span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burgerOpen span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  left: 0;
+}
 
 .expandedBio {
   display: none;
@@ -139,35 +234,6 @@ p {
   height: 17px;
   z-index: -1;
   box-shadow: 2px 2px 6px 0 #818282;
-}
-
-.hamburger {
-  background: none;
-  line-height: 45px;
-  padding: 10px 11px 10px 11px;
-  border: 0;
-  font-size: 1.5em;
-  font-weight: bolder;
-  cursor: pointer;
-  transform: scale(1.5, 1);
-  position: absolute;
-  right: 11px;
-  top: 0;
-  outline: none;
-}
-
-.cross {
-  background: none;
-  line-height: 45px;
-  padding: 10px 15px 10px 15px;
-  border: 0;
-  font-size: 1.5em;
-  cursor: pointer;
-  transform: scale(1.5, 1);
-  position: absolute;
-  right: 10px;
-  top: 0;
-  outline: none;
 }
 
 .joshImage {
@@ -502,7 +568,6 @@ fieldset {
   z-index: 99;
   font-size: 40px;
   border: none;
-  outline: none;
   background-color: #818282;
   color: white;
   cursor: pointer;
@@ -807,11 +872,9 @@ fieldset {
     display: none;
   }
 
-  .hamburger,
-  .cross {
+  .navMobile {
     display: none;
   }
-
   .navDesktop {
     display: initial;
   }
