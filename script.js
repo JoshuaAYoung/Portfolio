@@ -107,7 +107,7 @@ function generateProject(index) {
     <h3 class="projectTitle">${PROJECTS[index].title}</h3>
     <div class="projectDescription">
         <p class="descriptionText">${PROJECTS[index].description}</p>
-        <p class="projectLinkContainer"><a href="${PROJECTS[index].code}" target="_blank" class="projectLinks">CODE</a><span class="projectBullet"><img src="./images/hexagon.svg" alt="gear logo" class="logoBreak"></span><a href="${PROJECTS[index].demo}" target="_blank" class="projectLinks">DEMO</a>
+        <p class="projectLinkContainer"><a href="${PROJECTS[index].code}" target="_blank" class="projectLinks" rel="noopener">CODE</a><span class="projectBullet"><img src="./images/hexagon.svg" alt="gear logo" class="logoBreak"></span><a href="${PROJECTS[index].demo}" target="_blank" class="projectLinks" rel="noopener">DEMO</a>
     </div>
     <p class="projectLanguages">${PROJECTS[index].languages}</p>
 </div>`;
