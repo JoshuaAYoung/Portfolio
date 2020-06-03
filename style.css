@@ -868,9 +868,10 @@ fieldset {
     display: none;
   }
 
-  .navMobile {
+  .burgerButton {
     display: none;
   }
+
   .navDesktop {
     display: initial;
   }
