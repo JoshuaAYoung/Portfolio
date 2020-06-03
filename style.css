@@ -20,10 +20,17 @@ p {
 .expandBio,
 .collapseBio,
 .hamburger,
+.cross {
+  cursor: pointer;
+}
+
+/* .expandBio,
+.collapseBio,
+.hamburger,
 .cross,
 .projectImage {
   cursor: pointer;
-}
+} */
 
 .expandedBio {
   display: none;
@@ -41,19 +48,19 @@ p {
 }
 
 .logoImage {
-  width: 30px;
+  width: 27px;
   margin-left: 18px;
 }
 
 .name {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 23px;
   margin: auto;
   display: inline-block;
   letter-spacing: -1px;
   margin: 18px 0 0 7px;
-  vertical-align: 8px;
+  vertical-align: 7px;
 }
 
 .navMenuMobile {
@@ -203,9 +210,16 @@ p {
   font-weight: bold;
 }
 
-.expandBio,
-.collapseBio {
+.defaultBold {
   font-weight: bold;
+  text-decoration: underline;
+}
+
+.expandBio br,
+.collapseBio br {
+  margin-top: 8px;
+  display: block;
+  content: "";
 }
 
 .portfolioContainer {
@@ -382,12 +396,12 @@ p {
   font-weight: 700;
 }
 
-.formList,
-.inputList {
+.formLabel,
+.inputContainer {
   list-style-type: none;
 }
 
-.inputList {
+.inputContainer {
   margin-bottom: 7px;
 }
 
@@ -437,12 +451,13 @@ fieldset {
   border: 2px solid #818282;
 }
 
-.projectGeneratorList {
+.projectGeneratorContainer {
   width: 235px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 0;
   margin-bottom: 10px;
+  margin-top: 16px;
 }
 
 .inputText {
@@ -500,6 +515,50 @@ fieldset {
   -o-transition: all 0.1s ease-out 0.1s;
 }
 
+.socialLogo:hover {
+  transform: scale(1.1);
+}
+
+#scrollTop:hover {
+  opacity: 1;
+}
+
+.menuHover:hover::before {
+  content: "";
+  background: #70c9be;
+  position: absolute;
+  right: -8px;
+  top: 15px;
+  width: 100%;
+  height: 18px;
+  z-index: -1;
+  box-shadow: 2px 2px 6px 0 #818282;
+}
+
+.menuDesktop:hover::before {
+  content: "";
+  background: #70c9be;
+  position: absolute;
+  right: -5px;
+  top: 8px;
+  width: 100%;
+  height: 13px;
+  z-index: -1;
+  box-shadow: 2px 2px 6px 0 #818282;
+}
+
+.projectLinks:hover::before {
+  content: "";
+  background: #70c9be;
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  width: 100%;
+  height: 13px;
+  z-index: -1;
+  box-shadow: 2px 2px 6px 0 #818282;
+}
+
 @media not all and (pointer: coarse) {
   /* .projectImageContainer:hover > img {
     filter: brightness(25%);
@@ -519,50 +578,6 @@ fieldset {
     margin-left: -46px;
     margin-top: -10px;
   } */
-
-  .socialLogo:hover {
-    transform: scale(1.1);
-  }
-
-  #scrollTop:hover {
-    opacity: 1;
-  }
-
-  .menuHover:hover::before {
-    content: "";
-    background: #70c9be;
-    position: absolute;
-    right: -8px;
-    top: 15px;
-    width: 100%;
-    height: 18px;
-    z-index: -1;
-    box-shadow: 2px 2px 6px 0 #818282;
-  }
-
-  .menuDesktop:hover::before {
-    content: "";
-    background: #70c9be;
-    position: absolute;
-    right: -5px;
-    top: 8px;
-    width: 100%;
-    height: 13px;
-    z-index: -1;
-    box-shadow: 2px 2px 6px 0 #818282;
-  }
-
-  .projectLinks:hover::before {
-    content: "";
-    background: #70c9be;
-    position: absolute;
-    right: 0px;
-    top: 10px;
-    width: 100%;
-    height: 13px;
-    z-index: -1;
-    box-shadow: 2px 2px 6px 0 #818282;
-  }
 }
 
 @media only screen and (min-width: 360px) {
@@ -645,7 +660,7 @@ fieldset {
   }
 
   .logoImage {
-    width: 34px;
+    width: 30px;
   }
 
   .bioText {
@@ -654,7 +669,7 @@ fieldset {
   }
 
   .name {
-    font-size: 30px;
+    font-size: 28px;
     margin-top: 16px;
   }
 }
@@ -665,7 +680,7 @@ fieldset {
     letter-spacing: -3px;
   }
 
-  .projectGeneratorList {
+  .projectGeneratorContainer {
     width: 300px;
   }
 

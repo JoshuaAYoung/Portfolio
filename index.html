@@ -201,11 +201,13 @@
               When I'm not obsessing over a project at work or at home, you'll
               likely find me on an adventure with tiny humans (the progeny) or
               immersed in a game.
-              <span class="collapseBio" aria-controls="bioText">
-                &lt; Collapse</span
+              <span class="collapseBio defaultBold" aria-controls="bioText">
+                <br />&lt;&lt; Collapse</span
               ></span
             ><span class="expandBio" aria-controls="bioText"
-              >... Read More &gt;</span
+              >... <br /><span class="defaultBold"
+                >Read More &gt;&gt;</span
+              ></span
             >
           </p>
         </div>
@@ -214,7 +216,7 @@
         <div class="portTitleContainer">
           <h2 class="portfolioTitle">Portfolio.</h2>
           <h3 class="portfolioInstructions">
-            <span class="click">Click</span> on a project to learn more.
+            <!-- <span class="click">Click</span> on a project to learn more. -->
           </h3>
         </div>
         <div class="projectsContainer" aria-live="polite"></div>
@@ -234,56 +236,56 @@
         <form class="portfolioDemo">
           <fieldset>
             <legend class="formLegend">Project Generator</legend>
-            <ul class="projectGeneratorList">
-              <li class="formList">
+            <div class="projectGeneratorContainer">
+              <div class="formLabel">
                 <label class="demoOption" for="firstOption"
                   >Project Title:</label
                 >
-              </li>
-              <li class="inputList">
+              </div>
+              <div class="inputContainer">
                 <input
                   type="text"
                   name="projecttitle"
                   id="firstOption"
                   class="inputText"
                 />
-              </li>
-              <li class="formList">
+              </div>
+              <div class="formLabel">
                 <label class="demoOption" for="secondOption">Image Link:</label>
-              </li>
-              <li class="inputList">
+              </div>
+              <div class="inputContainer">
                 <input
                   type="text"
                   name="imagelink"
                   id="secondOption"
                   class="inputText"
                 />
-              </li>
-              <li class="formList">
+              </div>
+              <div class="formLabel">
                 <label class="demoOption" for="thirdOption"
                   >Languages Used:</label
                 >
-              </li>
-              <li class="inputList">
+              </div>
+              <div class="inputContainer">
                 <input
                   type="text"
                   name="languagesused"
                   id="thirdOption"
                   class="inputText"
                 />
-              </li>
-              <li class="formList">
+              </div>
+              <div class="formLabel">
                 <label class="demoOption" for="fourthOption">Description</label>
-              </li>
-              <li class="inputList">
+              </div>
+              <div class="inputContainer">
                 <input
                   type="text"
                   name="description"
                   id="fourthOption"
                   class="inputText"
                 />
-              </li>
-            </ul>
+              </div>
+            </div>
             <button type="submit" id="submitButton">SUBMIT</button>
           </fieldset>
         </form>

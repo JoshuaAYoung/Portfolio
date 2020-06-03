@@ -1,5 +1,5 @@
 const PROJECTS = [
-  //1
+  // 1
   {
     title: "v • able",
     image: "./images/vablescreenshot.png",
@@ -11,7 +11,7 @@ const PROJECTS = [
     demo: "https://vable.dev",
     class: "projectImage",
   },
-  //2
+  // 2
   {
     title: "npmm",
     image: "./images/npmmscreenshot.png",
@@ -23,7 +23,7 @@ const PROJECTS = [
     demo: "https://npmm.dev",
     class: "projectImage",
   },
-  //3
+  // 3
   {
     title: "PUBcrawlHUB",
     image: "./images/pchscreenshot.png",
@@ -35,7 +35,7 @@ const PROJECTS = [
     demo: "https://pubcrawlhub.dev",
     class: "projectImage",
   },
-  //4
+  // 4
   {
     title: "Portfolio",
     image: "./images/portscreenshot.png",
@@ -47,7 +47,7 @@ const PROJECTS = [
     demo: "https://joshyoung.net",
     class: "projectImage",
   },
-  //5
+  // 5
   {
     title: "Harry Potter and the Quiz of Ages",
     image: "./images/hpscreenshot.png",
@@ -121,7 +121,7 @@ function generateProjectHtml() {
   return projectHtml;
 }
 
-//Need empty divs in order to make the flexbox work properly - number of empty divs depends on the width of the window (responsive) and the number of items in the portfolio
+// Need empty divs in order to make the flexbox work properly - number of empty divs depends on the width of the window (responsive) and the number of items in the portfolio
 function generateEmpty() {
   let projectContainer = $(".projectsContainer");
   projectContainer.empty;
@@ -146,8 +146,8 @@ function generateEmpty() {
   }
 }
 
-//CODE DEMO - functions to support the form that demos the json-esque data array
-
+// CODE DEMO - functions to support the form that demos the json-esque data array
+// Get a random fact about cats to populate the demo project
 function getFact() {
   let url = "https://catfact.ninja/fact?max_length=140";
   fetch(url)
@@ -202,10 +202,10 @@ function generateDemoProject(title, link, languages, description) {
   $(".projectsContainer").empty();
   pushProjects();
   generateEmpty();
-  handleDescription();
+  // handleDescription();
 }
 
-//HANDLERS
+// HANDLERS
 
 function getInput() {
   $(".portfolioDemo").on("submit", function (event) {
@@ -292,7 +292,7 @@ $(function () {
   handleHamburger();
   handleBio();
   buttonScroll();
-  handleDescription();
+  // handleDescription();
   getInput();
   getFact();
 });
