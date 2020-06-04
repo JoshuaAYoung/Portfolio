@@ -145,18 +145,18 @@ p {
 }
 
 .logoImage {
-  width: 30px;
+  width: 29px;
   margin-left: 18px;
 }
 
 .name {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 23px;
+  font-size: 24px;
   display: inline-block;
   letter-spacing: -1px;
   margin: 21px 0 0 5px;
-  vertical-align: 9px;
+  vertical-align: 6px;
 }
 
 .navMenuMobile {
@@ -658,7 +658,7 @@ fieldset {
   }
 
   .logoImage {
-    margin-left: 30px;
+    margin-left: 20px;
   }
 
   .project {
@@ -720,10 +720,6 @@ fieldset {
   .titleText {
     font-size: 80px;
     letter-spacing: -3px;
-  }
-
-  .logoImage {
-    width: 30px;
   }
 
   .bioText {
@@ -844,7 +840,7 @@ fieldset {
   }
 
   .logoImage {
-    margin-left: 43px;
+    margin-left: 27px;
   }
 
   .joshImage {
