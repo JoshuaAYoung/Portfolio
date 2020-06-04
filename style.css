@@ -36,11 +36,11 @@ p {
   position: absolute;
   top: 0;
   right: 0;
-  width: 78px;
+  width: 64px;
   height: 67px;
   background: transparent;
   border: none;
-  padding: 0 25px 25px;
+  padding: 0 20px 19px;
   outline: none;
 }
 
@@ -91,7 +91,7 @@ p {
 }
 
 .burgerContainer span:nth-child(2) {
-  top: 10px;
+  top: 8px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
@@ -99,7 +99,7 @@ p {
 }
 
 .burgerContainer span:nth-child(3) {
-  top: 20px;
+  top: 16px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
@@ -111,7 +111,8 @@ p {
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
-  left: 0;
+  left: 5px;
+  width: 23px;
 }
 
 .burgerOpen span:nth-child(2) {
@@ -124,7 +125,8 @@ p {
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  left: 0;
+  left: 5px;
+  width: 23px;
 }
 
 .expandedBio {
@@ -143,7 +145,7 @@ p {
 }
 
 .logoImage {
-  width: 27px;
+  width: 30px;
   margin-left: 18px;
 }
 
@@ -153,8 +155,8 @@ p {
   font-size: 23px;
   display: inline-block;
   letter-spacing: -1px;
-  margin: 18px 0 0 7px;
-  vertical-align: 7px;
+  margin: 21px 0 0 5px;
+  vertical-align: 9px;
 }
 
 .navMenuMobile {
@@ -727,11 +729,6 @@ fieldset {
   .bioText {
     font-size: 18px;
     margin: 35px 0 45px;
-  }
-
-  .name {
-    font-size: 28px;
-    margin-top: 16px;
   }
 }
 
