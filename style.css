@@ -40,8 +40,9 @@ p {
   height: 67px;
   background: transparent;
   border: none;
-  padding: 0 20px 19px;
+  padding: 24px 20px 0;
   outline: none;
+  box-sizing: border-box;
 }
 
 .burgerContainer {
