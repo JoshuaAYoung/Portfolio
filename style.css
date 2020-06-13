@@ -19,18 +19,11 @@ p {
 
 .expandBio,
 .collapseBio,
-.burgerButton,
-.cross {
-  cursor: pointer;
-}
-
-/* .expandBio,
-.collapseBio,
 .cross,
 .burgerButton,
 .projectImage {
   cursor: pointer;
-} */
+}
 
 .burgerButton {
   position: absolute;
@@ -276,6 +269,11 @@ p {
 
 .boldBioText {
   font-weight: bold;
+}
+
+.etcLink {
+  text-decoration: underline;
+  color: #028090;
 }
 
 .defaultBold {
@@ -627,7 +625,7 @@ fieldset {
 }
 
 @media not all and (pointer: coarse) {
-  /* .projectImageContainer:hover > img {
+  .projectImageContainer:hover > img {
     filter: brightness(25%);
   }
 
@@ -644,7 +642,7 @@ fieldset {
     cursor: pointer;
     margin-left: -46px;
     margin-top: -10px;
-  } */
+  }
 }
 
 @media only screen and (min-width: 360px) {

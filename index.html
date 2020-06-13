@@ -5,7 +5,7 @@
     <title>Josh Young - Portfolio</title>
     <meta
       name="description"
-      content="I'm Josh, a software engineer of the full-stack variety. In addition to HTML5, CSS3, JavaScript, jQuery, React, Express, and PostgreSQL I bring a lot of relevant skills to the table from my previous career as a licensed architect. Rigorous problem solving. Intuitive design. Precision. A passion for learning, every... single... day."
+      content="I'm Josh, a software engineer of the full-stack variety. In addition to React, JavaScript, PostgreSQL, jQuery, HTML5, CSS3, I bring a lot of relevant skills to the table from my previous career as a licensed architect. Rigorous problem solving. Intuitive design. Precision. A passion for learning, every... single... day."
     />
     <meta
       name="keywords"
@@ -19,7 +19,7 @@
     <meta name="twitter:title" content="Josh Young - Portfolio" />
     <meta
       name="twitter:description"
-      content="I'm Josh, a software engineer of the full-stack variety. In addition to HTML5, CSS3, JavaScript, jQuery, React, Express, and PostgreSQL, I bring a lot of relevant skills to the table from my previous career as a licensed architect. Rigorous problem solving. Intuitive design. Precision. A passion for learning, every... single... day."
+      content="I'm Josh, a software engineer of the full-stack variety. In addition to React, JavaScript, PostgreSQL, jQuery, HTML5, CSS3, I bring a lot of relevant skills to the table from my previous career as a licensed architect. Rigorous problem solving. Intuitive design. Precision. A passion for learning, every... single... day."
     />
     <meta name="twitter:image" content="https://joshyoung.net/preview.jpg" />
 
@@ -41,7 +41,7 @@
     <meta property="og:image:height" content="731" />
     <meta
       property="og:description"
-      content="I'm Josh, a software engineer of the full-stack variety. In addition to HTML5, CSS3, JavaScript, jQuery, React, Express, and PostgreSQL I bring a lot of relevant skills to the table from my previous career as a licensed architect. Rigorous problem solving. Intuitive design. Precision. A passion for learning, every... single... day."
+      content="I'm Josh, a software engineer of the full-stack variety. In addition to React, JavaScript, PostgreSQL, jQuery, HTML5, CSS3, I bring a lot of relevant skills to the table from my previous career as a licensed architect. Rigorous problem solving. Intuitive design. Precision. A passion for learning, every... single... day."
     />
     <meta property="og:site_name" content="Josh Young - Portfolio" />
     <link rel="apple-touch-icon" href="https://joshyoung.net/logo192.png" />
@@ -115,7 +115,7 @@
           </li>
           <li>
             <a
-              href="./images/resume.pdf"
+              href="./images/JoshYoung-Resume.pdf"
               target="_blank"
               class="menuItem menuHover"
               rel="noopener"
@@ -171,7 +171,7 @@
               class="menuBreak"
           /></span>
           <a
-            href="./images/resume.pdf"
+            href="./images/JoshYoung-Resume.pdf"
             target="_blank"
             class="menuDesktop"
             rel="noopener"
@@ -197,24 +197,32 @@
             />
           </div>
           <p class="bioText" id="bioText" aria-live="polite">
-            I'm Josh, a software engineer of the full-stack variety. In addition
-            to
+            I'm Josh, a full-stack developer with design sense. In addition to
             <span class="boldBioText"
-              >HTML5, CSS3, JavaScript, jQuery, React, Express, and PostgreSQL,
+              >React, JavaScript, PostgreSQL, jQuery, HTML5, CSS3,
+              <a
+                href="https://joshyoung.net/images/JoshYoung-Resume.pdf"
+                class="etcLink"
+                target="_blank"
+                rel="noopener"
+              >
+                etc.,</a
+              >
             </span>
             I bring a lot of relevant skills to the table from my previous
             career as a licensed<span class="expandedBio hidden">
-              architect. Rigorous problem solving. Intuitive design. Precision.
-              A passion for building things as a team. <br /><br />
-              <!-- A passion for learning, every... single... day. <br /><br /> -->
-              When I'm not coding, you’ll usually find me hacking life. I’m such
-              a passionate problem solver that I have filled my life with
-              projects. From building my own 3d printer to making furniture.
-              House remodeling. I’m even building a teardrop trailer.
+              architect&mdash;eager problem solving, team communication,
+              attention to detail, a passion for learning every...single...day.
+              <br /><br />
+
+              When I'm not coding, you’ll usually find me looking for things to
+              hack. Problem solving brings me so much joy that I have filled my
+              life with projects. From building my own 3d printer to making
+              furniture. House remodeling. I’m even building a teardrop trailer.
               <br /><br />
               When I'm not obsessing over a project at work or at home, you'll
-              likely find me on an adventure with tiny humans (the progeny) or
-              immersed in a game.
+              likely find me on an adventure with tiny humans&mdash;the
+              progeny&mdash;or immersed in a game.
               <span class="collapseBio defaultBold" aria-controls="bioText">
                 <br />&lt;&lt; Collapse</span
               ></span
@@ -230,7 +238,7 @@
         <div class="portTitleContainer">
           <h2 class="portfolioTitle">Portfolio.</h2>
           <h3 class="portfolioInstructions">
-            <!-- <span class="click">Click</span> on a project to learn more. -->
+            <span class="click">Click</span> on a project to learn more.
           </h3>
         </div>
         <div class="projectsContainer" aria-live="polite"></div>
@@ -243,9 +251,10 @@
           <h2 class="portfolioProjText">Demo $(this).</h2>
         </div>
         <p class="portfolioProjDescription">
-          Want to try out the JSON-like array that stores project data here?
-          Fill out the form below or just click submit to generate a random
-          project and add it to the page.
+          To streamline adding projects, I've structured the app to use a
+          JSON-like data array to store project information. Want to try it out?
+          Fill out the form below or just click submit to generate a project
+          with data fetched from two separate APIs.
         </p>
         <form class="portfolioDemo">
           <fieldset>

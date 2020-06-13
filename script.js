@@ -30,7 +30,7 @@ const PROJECTS = [
     imageAlt: "Pub Crawl Hub Website Screenshot",
     languages: "jQuery | JavaScript | HTML | CSS",
     description:
-      "PUBcrawlHUB makes it easy to plan out a bar crawl and get directions from one location to the next. Enter the desired location, and PUBcrawlHUB shows you a list of bars in the area. Sort the bars in the order you want to visit them, remove the ones you don't want and you're ready to hit the town.",
+      "PUBcrawlHUB makes it easy to plan out a bar crawl. Enter the desired location, and PUBcrawlHUB shows you a list of bars in the area. Sort the bars in the order you want to visit them, remove the ones you don't want and then follow the turn by turn directions to get from one bar to the next.",
     code: "https://github.com/JoshuaAYoung/PUBCrawlHub",
     demo: "https://pubcrawlhub.dev",
     class: "projectImage",
@@ -202,7 +202,7 @@ function generateDemoProject(title, link, languages, description) {
   $(".projectsContainer").empty();
   pushProjects();
   generateEmpty();
-  // handleDescription();
+  handleDescription();
 }
 
 // HANDLERS
@@ -227,28 +227,28 @@ function pushProjects() {
   $(".projectsContainer").prepend(generateProjectHtml());
 }
 
-// function handleDescription() {
-//   $(".projectDescription").hide();
-//   $(".project").click(function (event) {
-//     if (!$(this).find(".projectDescription").hasClass("shown")) {
-//       event.stopPropagation();
-//       event.preventDefault();
-//       $(this).find(".projectLanguages").hide();
-//       $(this).find(".projectDescription").slideDown("slow", "swing");
-//       $(this).find(".projectDescription").addClass("shown");
-//     } else {
-//       $(this).find(".projectDescription").slideUp("slow", "swing");
-//       $(this).find(".projectLanguages").show();
-//     }
-//   });
-//   $(document).click(function () {
-//     if ($(".projectDescription").hasClass("shown")) {
-//       $(".projectDescription").slideUp("slow", "swing");
-//       $(".projectLanguages").show();
-//       $(".projectDescription").removeClass("shown");
-//     }
-//   });
-// }
+function handleDescription() {
+  $(".projectDescription").hide();
+  $(".project").click(function (event) {
+    if (!$(this).find(".projectDescription").hasClass("shown")) {
+      event.stopPropagation();
+      event.preventDefault();
+      $(this).find(".projectLanguages").hide();
+      $(this).find(".projectDescription").slideDown("slow", "swing");
+      $(this).find(".projectDescription").addClass("shown");
+    } else {
+      $(this).find(".projectDescription").slideUp("slow", "swing");
+      $(this).find(".projectLanguages").show();
+    }
+  });
+  $(document).click(function () {
+    if ($(".projectDescription").hasClass("shown")) {
+      $(".projectDescription").slideUp("slow", "swing");
+      $(".projectLanguages").show();
+      $(".projectDescription").removeClass("shown");
+    }
+  });
+}
 
 function handleBio() {
   $(".bioText").click(function () {
@@ -283,7 +283,7 @@ $(function () {
   handleHamburger();
   handleBio();
   buttonScroll();
-  // handleDescription();
+  handleDescription();
   getInput();
   getFact();
 });
